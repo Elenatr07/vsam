@@ -229,8 +229,8 @@ color: rgba(0, 0, 0, 1);
     width: 100%;
     display: block;
     position: absolute;
-    top: 209px;
-    left: calc(100vw*0.01);
+    top: 326px;
+    left: calc(100vw*0.08);
     background: rgba(248, 248, 255, 1);
     padding: 73px 102px;
     transform: translateX(-150%);
@@ -248,7 +248,7 @@ color: rgba(0, 0, 0, 1);
 
 @media screen and (min-width:1921px) and (max-width:2560px) {
     .appearing_block{
-        left: calc(100vw*0.132);
+        left: calc(100vw*0.185);
     }
 }
 
