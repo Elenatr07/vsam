@@ -55,11 +55,114 @@
 
         </div>
         <div class="main_content">
-            <h2>Our Services</h2>
+            <h2 class="contant_header">Our Services</h2>
+            <div class="services_block">
+                <div class="consulting">
+                    <h3 class="consalting_header">Consulting Services</h3>
+                    <hr class="consalting_header_line">
+                    <div class="text_in_service">
+                        <p>Governance & Compliance</p>
+                        <ul>Infrastructure:
+                            <li>Design & Structure</li>
+                            <li>BCP, Governance</li>
+                            <li>Consolidation</li>
+                            <li>Collaboration & Board Room</li>
+                        </ul>
+                        <br>
+                        <ul>Security:
+                            <li>Policy & Procedures</li>
+                            <li>Security Structure</li>
+                            <li>Security Policy Management</li>
+                        </ul>
+                        <br>
+                        <ul>Network:
+                            <li>Strategy, Planning, Policy</li>
+                            <li>Assessment & Optimization</li>
+                            <li>Software Defined Network</li>
+                            <li>VOIP</li>
+                        </ul>
+                        <a class="consulting_link" href="#">Learn More <span><img src="img/Arrow1.svg" alt=""></span></a>
+                    </div>
+                </div>
+                <div class="other_service">
+                    <h3 class="other_service_header">Other Services</h3>
+                    <hr class="other_service_header_line">
+                    <div class="text_in_service other">
+                       
+                        <ul>Cloud Solutions:
+                            <li>Hosting</li>
+                            <li>Migration</li>
+                            <li>System Support</li>
+                        </ul>
+                        <a class="other_link" href="#">Learn More <span><img src="img/Arrow2.svg" alt=""></span></a>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <div class="about_as_container">
+            <div class="about_us_block">
+                <img src="img/img2.png" alt="">
+                <div class="about_us_info">
+                    <h3 class="about_us-info_header">About Us</h3>
+                    <p>VSAM Technologies is a trailblazer in the telecommunications and IT sector. 
+                        Merging deep domain knowledge with consultancy prowess, we deliver bespoke solutions tailored to today's digital challenges. 
+                        Additionally, our cloud services propel businesses towards greater efficiency and scalability. At VSAM, we're committed to connecting the world and innovating for tomorrow.</p>
+                        <div class="about_us_link">
+                            <a href="#">View Success Cases</a>
+                        </div>
+                        
+                </div>
+            </div>
         </div>
 
     </div>
     <script src="scripts/style_menu.js"></script>
+
+   <script>
+      (function () {
+  var square = document.querySelector('.services_block');
+
+  var observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      var entrySquare = entry.target.querySelector('.consulting');
+      if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+        return;
+      }
+
+      if (entry.isIntersecting) {
+        entrySquare.classList.add('block_animation');
+        return;
+      }
+
+      entrySquare.classList.remove('block_animation');
+    });
+  });
+
+  observer.observe(square);
+})();
+  (function () {
+  var square = document.querySelector('.services_block');
+
+  var observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      var entrySquare = entry.target.querySelector('.other_service');
+      if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+        return;
+      }
+
+      if (entry.isIntersecting) {
+        entrySquare.classList.add('block_animation1');
+        return;
+      }
+
+      entrySquare.classList.remove('block_animation1');
+    });
+  });
+
+  observer.observe(square);
+})();
+   </script>
+    
 </body>
 </html>
