@@ -118,3 +118,4 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+.slick-cloned { display: none !important; }
