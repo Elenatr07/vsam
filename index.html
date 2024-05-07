@@ -102,7 +102,7 @@
             </div>
 
         </div>
-        <div class="about_as_container">
+        <div class="about_us_container">
             <div class="about_us_block">
                 <img src="img/img2.png" alt="">
                 <div class="about_us_info">
@@ -119,18 +119,29 @@
         </div>
         <div class="why_choose_us">
             <div class="slider_block">
+                <h3>Why Choose Us?</h3>
 
           
             <section class="variable slider">
-                <div class="one">
-                <img class="one-1" src="http://placehold.it/350x300?text=1">
+                <div class="slider_one">
+                    <h4 class="slider_header_one">Cost Savings</h4>
+                    <hr class="other_service_header_line">
+                    <p class="slider_txt_info">Through our IT consultancy and cloud services, clients achieve significant cost savings by optimizing infrastructures, 
+                        reducing overheads, and leveraging scalable solutions tailored to their unique needs.</p>
                 </div>
-                <div class="two">
-                <img class="two_1" src="http://placehold.it/200x300?text=2">
+                <div class="slider_one">
+                    <h4 class="slider_header_one">Expertise & Experience</h4>
+                    <hr class="other_service_header_line">
+                    <p class="slider_txt_info">Through our IT consultancy and cloud services, clients achieve significant cost savings by optimizing infrastructures, 
+                    reducing overheads, and leveraging scalable solutions tailored to their unique needs.</p>
                 </div>
-                <div>
-                <img src="http://placehold.it/100x300?text=3">
+                <div class="slider_one">
+                    <h4 class="slider_header_one">Expertise</h4>
+                    <hr class="other_service_header_line">
+                    <p class="slider_txt_info">Through our IT consultancy and cloud services, clients achieve significant cost savings by optimizing infrastructures, 
+                    reducing overheads, and leveraging scalable solutions tailored to their unique needs.</p>
                 </div>
+                
                
             </section>
             </div>
@@ -145,7 +156,20 @@
       $(".variable").slick({
         dots: true,
         infinite: true,
-        variableWidth: true
+        variableWidth: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }]
       });
  
     });

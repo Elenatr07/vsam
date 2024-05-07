@@ -10,10 +10,10 @@
 
       if (entry.isIntersecting) {
         entrySquare.classList.add('block_animation');
-        return;
+      //  return;
       }
 
-      entrySquare.classList.remove('block_animation');
+    //  entrySquare.classList.remove('block_animation');
     });
   });
 
@@ -31,10 +31,10 @@
 
       if (entry.isIntersecting) {
         entrySquare.classList.add('block_animation1');
-        return;
+      //  return;
       }
 
-      entrySquare.classList.remove('block_animation1');
+    //  entrySquare.classList.remove('block_animation1');
     });
   });
 
