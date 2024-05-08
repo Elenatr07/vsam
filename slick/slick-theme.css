@@ -23,10 +23,10 @@
     line-height: 0;
 
     position: absolute;
-    top: 111%;
+    top: 105%;
 
     display: block;
-
+    z-index: 2;
     
     padding: 0;
     -webkit-transform: translate(0, -50%);
@@ -86,10 +86,16 @@
     transform: rotate(-134deg);
     left: 13px;
 }
+.slick-next:before{
+-moz-transform: rotate(41deg);
+    -webkit-transform: rotate(41deg);
+    transform: rotate(41deg);
+    left: 9px;
+}
 
 .slick-prev
 {
-    left: -25px;
+    left: 13%;
 }
 [dir='rtl'] .slick-prev
 {
@@ -100,7 +106,7 @@
 
 .slick-next
 {
-    right: -25px;
+    left: 17%;
 }
 [dir='rtl'] .slick-next
 {
@@ -118,7 +124,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -77px;
+    bottom: -42px;
 
     display: block;
 
@@ -127,7 +133,7 @@
     margin: 0;
 
     list-style: none;
-
+    z-index: 1;
     text-align: center;
 }
 .slick-dots li
