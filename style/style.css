@@ -108,7 +108,7 @@ a {
 .nav {
   overflow: hidden;
   right: 0;
-  width: 264px;
+  width: 268px;
   /*height: 845px;*/
   margin-top: 0;
   position: fixed;
@@ -119,7 +119,8 @@ a {
   bottom: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(249, 249, 252, 1);
+  
 }
 
 .menu_block {
@@ -162,6 +163,10 @@ a {
   text-align: left;
   margin-right: 60px;
   color: rgba(0, 0, 0, 1);
+}
+.top{
+  background: rgba(249, 249, 252, 1);
+
 }
 .appearing_block_header {
   font-family: "Kodchasan", sans-serif;
@@ -495,13 +500,95 @@ footer{
   pointer-events: none;
   cursor: default;
 }
+.shadow {
+  background-color: rgba(0, 0, 0, 0.8);
+
+  opacity: 0.7;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+    
+}
+.services_container{
+  max-width:1920px;
+  width: 100%;
+  margin: auto;
+  padding: 90px 100px;
+}
+.services_menu{
+  width: 523px;
+  height: 100px;
+  border-radius: 50px;
+  background: rgba(43, 61, 145, 1);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.services_menu_item1{
+  width: 269px;
+  height: 83px;
+  border-radius: 60px;
+  background: rgba(248, 248, 255, 1);
+  
+  display: block;
+  margin: auto 0;
+  position: relative;
+
+  left: 8px;
+  padding: 23px 23px 23px 27px;
+}
+.services_menu_item1 p,
+.services_menu_item2 p{
+  font-family: "Kodchasan", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  
+  
+}
+.services_menu_item1 p{
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+.services_menu_item2 p{
+  color: rgba(255, 255, 255, 1);
+  margin: auto;
+  text-align: center;
+  
+}
+
+.services_menu_item1 p::before{
+  content: "";
+  width: 22px;
+  height: 18px;
+  background-image: url(../img/check_mark.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 18px;
+  display: inline-block;
+  margin-right: 15px;
+
+
+}
+.services_menu_item2{
+  width: 240px;
+  padding: 23px 23px 23px 5px;
+  margin: auto 0;
+  display: block;
+}
+
+
 
 
 
 
 
 @media screen and (min-width: 801px) and (max-width: 4000px) {
-  .nav_shadow {
+  #nav_shadow {
     display: none;
   }
   .hamb {
@@ -522,4 +609,25 @@ footer{
   .menu_item_name {
     display: none;
   }
+}
+@media(max-width:800px) {
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.side-menu:checked~nav {
+    max-height: 100vh;
+}
+.menu_item {
+    color: rgba(78, 27, 209, 1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0;
+}
 }
