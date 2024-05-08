@@ -17,7 +17,7 @@
                
                <p><a name="up"></a></p>
                <div class="header_block">
-                    <a class="name" href="#"><img src="img/logo.svg" alt=""></a>
+                    <a class="name" href="index.html"><img src="img/logo.svg" alt=""></a>
                     <!-- Hamburger icon -->
                 <input class="side-menu" type="checkbox" id="side-menu" />
                 <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
@@ -43,17 +43,60 @@
         </div>
         <div class="services_container">
             <div class="services_menu">
-                <div class="services_menu_item1">
-                    <p>Consulting</p></div>
-                <div class="services_menu_item2">
-                    <p>Cloud</p>
+                <div href="#" class="services_menu_item1" id="services_menu_item1">
+                    <p id="services_menu_item1_p">Consulting</p></div>
+                <a href="#" class="services_menu_item2" id="services_menu_item2"  onmouseover="changeItem()" onmouseout="rechangeItem()">
+                    <p id="services_menu_item2_p">Cloud</p>
+                </a>
+
+            </div>
+
+        </div>
+        <div class="service_block_one_container">
+            <div class="service_block_one">
+                <div class="service_block_one_button">
+                    <button class="load_btn" onclick="show_more_security_consalting()" id="load_btn_block_one">Security Consulting</button>
                 </div>
+                <div class="description_security_consalting">
+                    <div class="step">
+                       <div class="step_block_1">
+                            <h3 class="step_block_1_header">Present Challenges</h3>
+                            <hr class="step_block_1_line">
+                            <p class="step_block_1_txt">In the age of Social Media and Hybrid work environments, including Cloud and mobile technologies, alongside advancements like Edge computing and hyper-connectivity, 
+                                a new digital business landscape has arisen. While offering speed, agility, and insight, it also expands the attack surface, exposing businesses to cyber threats. 
+                                Safeguarding assets from known and unforeseen risks is crucial for organizations.</p>
+                       </div>
+                       <div class="step_block_2">
+                            <div class="step_block_2_img">
+                            <img src="img/img3.png" alt=""> 
+                            </div>
+                            <div class="step_block_2_info">
+                                <h3 class="step_block_1_header">Our Solutions</h3>
+                                <hr class="step_block_1_line">
+                                <ul class="step_block_2_txt">Our Cloud Adoption Framework serves as a guide, directing our efforts towards areas crucial for achieving your desired business outcomes. 
+                                    This established framework draws upon industry best practices  in various critical areas:
+                                    <li>Cloud Economics</li>
+                                    <li>Cloud Services</li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        
+
+                       </div>
+                    </div>
+                
+                  
+        
+              </div>
 
             </div>
 
         </div>
 
     </div>
+    <script src="scripts/service_menu.js"></script>
+    <script src="scripts/show_more.js"></script>
     
 </body>
 </html>
