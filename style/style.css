@@ -553,7 +553,7 @@ footer{
   position: relative;
 
   left: 8px;
-  padding: 23px 23px 23px 27px;
+  padding: 23px 23px 23px 0px;
 }
 .services_menu_item1 p,
 .services_menu_item2 p{
