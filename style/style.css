@@ -133,11 +133,18 @@ a {
 }
 
 .main_block {
-  max-width: 1920px;
+
   width: 100%;
   display: block;
   margin: 0 auto;
   position: relative;
+}
+.main_block img{
+  object-fit: cover;
+  object-position: 50% 100%;
+  max-width: 4000px;
+  height: 930px;
+  width: 100%;
 }
 
 .header_block {
@@ -424,7 +431,7 @@ span {
 }
 .about_us_info{
     width: 50%;
-    margin: auto;
+    margin: auto 0;
 }
 .about_us_info p
 {
@@ -794,20 +801,22 @@ footer{
 .service_block_two{
   background: rgba(249, 249, 252, 1);
 
-  
-
 }
+.center{
+  max-width: 1720px;
+  width: 100%;
+  margin: auto;
+}
+
 #bottom_menu1{
   background: rgba(249, 249, 252, 1);
   
   display: flex;
   justify-content: left;
-  max-width: 1720px;
-  width: 100%;
   margin: auto;
   padding-bottom: 160px; 
   padding-top: 160px;
-  padding-left: 571px;
+  padding-left: 33.2%
 } 
 #bottom_menu,
 #bottom_menu2{
@@ -835,7 +844,8 @@ footer{
 }
 .step2_right{
   display: flex;
-  justify-content: right;
+  justify-content: left;
+    padding-left: 33.2%;
 }
 .description_security_network_consalting .step_block_2 .step_block_2_img{
   order: 1;

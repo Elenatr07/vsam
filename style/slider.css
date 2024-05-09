@@ -66,11 +66,15 @@
     
 
 }
-.slick-slide:nth-child(2n){
+.slick-slide:nth-child(3n){
     background: rgba(157, 15, 15, 1);
-    opacity: 0.5;
-
+  
 }
+
+.slick-slide:nth-child(2n){
+    background: rgba(43, 61, 145, 1);
+}
+
 .slider_header{
     font-family: "Kodchasan", sans-serif;
     font-size: 35px;
