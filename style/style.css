@@ -588,6 +588,19 @@ footer{
 
 
 }
+#services_menu_item1_p.style::before{
+  content: "";
+  width: 22px;
+  height: 18px;
+  background-image: url(../img/check_mark_white.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 18px;
+  display: inline-block;
+  margin-right: 15px;
+
+
+}
+
 .services_menu_item2{
   width: 240px;
   padding: 23px 23px 23px 5px;

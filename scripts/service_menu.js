@@ -4,13 +4,9 @@ function changeItem(){
        document.getElementById("services_menu_item1").classList.add('service_menu_hover1'); 
        document.getElementById("services_menu_item1_p").style.color = 'rgba(248, 248, 255, 1)';
        document.getElementById("services_menu_item2_p").style.color = 'rgba(0, 0, 0, 1)';
-       let style = document.createElement('style');
-                style.innerHTML = `
-                .services_menu_item1 p::before {
-                    background-image: url(.../img/check_mark_white.svg);
-            }
-                `;
-        document.head.appendChild(style);
+      document.getElementById("services_menu_item1_p").classList.toggle("style")
+      
+       
     }
 
     
@@ -25,7 +21,7 @@ function rechangeItem(){
        let style = document.createElement('style');
                 style.innerHTML = `
                 .services_menu_item1 p::before {
-                    background-image: url(.../img/check_mark.svg);
+                    background-image: url(../img/check_mark.svg);
             }
                 `;
         document.head.appendChild(style); 
