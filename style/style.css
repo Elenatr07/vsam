@@ -607,6 +607,12 @@ footer{
   margin: auto 0;
   display: block;
 }
+.cloud1{
+  width: 240px;
+  padding: 23px 5px 23px 23px;
+  margin: auto 0;
+  display: block;
+}
 .service_menu_hover1{
   width: 240px;
   padding: 23px 23px 23px 5px;
@@ -626,18 +632,26 @@ footer{
   position: relative;
   left: -8px;
   padding: 23px 23px 23px 27px;
-  
+ }
+ .service_menu_hover2{
+  width: 269px;
+  height: 83px;
+  border-radius: 60px;
+  background: rgba(248, 248, 255, 1);
+    display: block;
+  margin: auto 0;
+  position: relative;
+  left: 7px;
+  padding: 23px 23px 23px 27px;
+ }
 
-}
 .service_block_one,
 .service_block_two
 {
   margin: auto;
   padding: 0 100px 0 100px;
 }
-.service_block_one{
-  
-}
+
 
 .step_block_1{
   max-width: 1157px;
@@ -881,9 +895,15 @@ footer{
     opacity: 1;
   }
 }
+.menu_item u{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: rgba(157, 15, 15, 1)
+}
 
-
-
+.cloud{
+  left: -7px;
+}
 
 
 @media screen and (min-width: 801px) and (max-width: 4000px) {
