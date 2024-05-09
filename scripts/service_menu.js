@@ -7,7 +7,7 @@ function changeItem(){
        let style = document.createElement('style');
                 style.innerHTML = `
                 .services_menu_item1 p::before {
-                    background-image: url(../img/check_mark_white.svg);
+                    background-image: url(.../img/check_mark_white.svg);
             }
                 `;
         document.head.appendChild(style);
@@ -25,7 +25,7 @@ function rechangeItem(){
        let style = document.createElement('style');
                 style.innerHTML = `
                 .services_menu_item1 p::before {
-                    background-image: url(../img/check_mark.svg);
+                    background-image: url(.../img/check_mark.svg);
             }
                 `;
         document.head.appendChild(style); 
