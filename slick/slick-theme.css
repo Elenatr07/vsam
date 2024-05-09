@@ -61,7 +61,11 @@
     opacity: 1;
 }
 .slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
+.slick-next.slick-disabled:before,
+.slick-next.slick-disabled,
+.slick-prev.slick-disabled
+
+
 {
     opacity: .25;
 }
