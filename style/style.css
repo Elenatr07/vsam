@@ -171,6 +171,12 @@ a {
   margin-right: 60px;
   color: rgba(0, 0, 0, 1);
 }
+.menu_item:hover{
+  text-shadow: 1px 1px 3px rgba(43, 61, 145, 1), -1px -1px 3px #FFF, 1px 1px rgba(43, 61, 145, 1), -1px -1px #FFF; color:rgba(43, 61, 145, 1);
+  
+}
+
+
 .top{
   background: rgba(249, 249, 252, 1);
 
@@ -222,6 +228,122 @@ a {
     padding-top: 12px; 
     width: 409px;
 }
+.appearing_block_button:hover{
+  background: rgba(255, 255, 255, 1);
+	color: rgba(43, 61, 145, 1);
+	box-shadow: inset 0 0 0 3px rgba(43, 61, 145, 1);
+}
+
+/*anime button */
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.blob-btn:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+  border-radius: 30px;
+}
+.blob-btn:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover {
+  color: blue;
+  border-radius: 30px;
+}
+.blob-btn:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: blue;
+}
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url(../img/goo.svg);
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: white;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+@supports (filter: url(../img/goo.svg)) {
+  .blob-btn__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+@supports (filter: url(../img/goo.svg)) {
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+
+
+
+/*-----*/
 
 
 .appearing_block {
@@ -914,6 +1036,169 @@ footer{
 .cloud{
   left: -7px;
 }
+.contact_info_header,
+.success_text{
+  font-family: "Kodchasan", sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 82.5px;
+  letter-spacing: 0.25em;
+  
+  color: rgba(43, 61, 145, 1);
+  
+
+}
+.contact_info_header{
+  text-align: left;
+}
+.contact_info_header span{
+  color: rgba(157, 15, 15, 1);
+
+
+}
+.contact_container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  padding: 120px 140px;
+}
+.contact_info_item a {
+  font-family: "Kodchasan", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 42.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+  margin-left: 30px;
+
+  
+}
+.contact_info_item{
+  margin-top: 56px;
+}
+.contact_info{
+  margin: auto 0;
+    max-width: 660px;
+    width: 100%;
+}
+.contact_phone{
+  cursor: none;
+  pointer-events: none;
+}
+.contact_form_header{
+  font-family: "Kodchasan", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 52.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+
+
+}
+.contact_form{
+  width: 850px;
+  height: 854px;
+  border-radius: 20px;
+  background: rgba(43, 61, 145, 1);
+  padding: 44px 57px;
+
+}
+.contact_form hr{
+  width: 300px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  margin-top: 35px;
+  margin-bottom: 60px;
+
+}
+.field_contacts input{
+  max-width: 735px;
+  width: 100%;
+  height: 53px;
+  border-radius: 20px;
+  border: 2px solid rgba(249, 249, 252, 1);
+  margin-bottom: 45px;
+  padding: 0 23px;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-align: left;
+ 
+  
+  
+
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder,
+textarea[type=text]::placeholder
+{
+  font-family: "Kodchasan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(148, 154, 157, 1);
+
+
+}
+.field_contacts textarea{
+  max-width: 735px;
+  width: 100%;
+  height: 176px;
+  border-radius: 20px;
+  background: rgba(248, 248, 255, 1);
+  padding: 18px 23px;
+  margin-bottom: 50px;
+
+
+}
+.button_for_contacts{
+  max-width: 306px !important;
+  width: 100%;
+  height: 73px !important;
+  border-radius: 30px !important;
+  border: 2px solid rgba(255, 255, 255, 1);
+  background: rgba(43, 61, 145, 1);
+  margin: auto;
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  text-align: center !important;
+  
+
+}
+.success{
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  padding: 100px 100px;
+}
+.success_text{
+  text-align: center;
+}
+.success_back{
+  color: rgba(157, 15, 15, 1);
+  text-align: center;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-top: 50px;
+}
+.success_back u{
+  text-decoration: underline;
+text-underline-offset: 20px;
+}    
+
 
 
 @media screen and (min-width: 801px) and (max-width: 4000px) {

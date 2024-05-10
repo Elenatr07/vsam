@@ -25,9 +25,9 @@
                         <div class="menu">
                             <div class="menu_items">
                                 <a class="menu_item_name" href="#"><img src="img/logo.svg" alt=""></a>
-                                <a class="menu_item" href="#"> <u>Our Services</u></a>
+                                <a class="menu_item" href="#"> Our Services</a>
                                 <a class="menu_item" href="#">Success Stories</a> 
-                                <a class="menu_item" href="#">Contact us</a>
+                                <a class="menu_item" href="#"><u>Contact us</u></a>
                             
                             </div>
                                 
@@ -35,213 +35,91 @@
                                     
                     </nav>
                </div>
-                        
+                
                 
                 
               
             </div>
         </div>
-        <div class="services_container">
-            <div class="services_menu">
-                <a href="consalting.html" class="services_menu_item2 cloud1" 
-                id="services_menu_item2" id="services_menu_item2" onmouseover="changeItem1()" onmouseout="rechangeItem1()">
-                    <p id="services_menu_item2_p">Consulting</p></a>
-                <div  class="services_menu_item1 cloud" id="services_menu_item1"  >
-                    <p id="services_menu_item1_p">Cloud</p>
+        <div class="contact_container">
+            <div class="contact_info">
+                <h2 class="contact_info_header">Let’s Have a <br> <span>Conversation</span></h2>
+                <div class="contact_info_item">
+                    <img src="img/mail.svg" alt="">
+                    <a href="mailto:contactus@vsamtechnologies.com">contactus@vsamtechnologies.com</a>
+                </div>
+                <div class="contact_info_item">
+                    <img src="img/phone.svg" alt="">
+                    <a class="contact_phone" href="tel:+4402084057168">+44 (0) 208 405 7168</a>
+                </div>
+                <div class="contact_info_item">
+                    <img src="img/location.svg" alt="">
+                    <a href="https://www.waze.com/en/live-map/directions?latlng=51.38321373391383%2C-0.09631116535948837&sjid=15450028977715895082-NA" target="_blank">14 Grenaby Avenue, Croydon CR0 2EG8</a>
                 </div>
 
             </div>
-
-        </div>
-        <div class="service_block_one_container">
-            <div class="service_block_one">
-                <div class="service_block_button" id="bottom_menu">
-                    <button class="load_btn" onclick="show_more_security_consalting()" id="load_btn_block_one">Cloud Advisory Services</button>
-                </div>
-             
-                <div class="description_security_consalting">
-                    <div class="step1 fade-in">
-                       <div class="step_block_1">
-                            <h3 class="step_block_1_header">Present Challenges</h3>
-                            <hr class="step_block_1_line">
-                            <p class="step_block_1_txt">Navigating the complexities of cloud services presents numerous challenges for businesses today, 
-                                including security risks, compliance issues, and cost optimization. Our cloud advisory services offer tailored solutions 
-                                to address these concerns, guiding businesses through every stage of their cloud journey. With our expertise, 
-                                organizations can confidently harness the power of cloud technology to drive innovation and growth while mitigating risks.</p>
-                       </div>
-                       <div class="step_block_2">
-                            <div class="step_block_2_img">
-                            <img src="img/img6.png" alt=""> 
-                            </div>
-                            <div class="step_block_2_info">
-                                <h3 class="step_block_1_header">Our Solutions</h3>
-                                <hr class="step_block_1_line">
-                                <ul class="step_block_2_txt">Our Cloud Adoption Framework serves as a guide, directing our efforts towards areas crucial for achieving your desired business outcomes. 
-                                    This established framework draws upon industry best practices  in various critical areas:
-                                    <li>Cloud Economics</li>
-                                    <li>Cloud Services</li>
-                                                                       
-                                    
-                                </ul>
-                            </div>
+            <div class="contact_form">
+                <h3 class="contact_form_header">Send us a message</h3>
+                <hr>
+                <form action="mail.php" id="form_contacts" method="post">
+              
+                    <div class="field_contacts">
+                      <div>
                         
-
-                       </div>
-                       <div class="step_block_3">
-                        <h3 class="step_block_1_header">Benefits</h3>
-                        <hr class="step_block_1_line">
-                        <div class="step_block_3_info">
-                            <div>No matter your current position in your cloud journey, our Cloud Framework will seamlessly synchronize your business objectives with your cloud goals.</div>
-                            <div>Our cloud advisory services help reduce infrastructure costs and  optimize resource utilization, ensuring you get the most value from your  cloud investments.</div>
-                            <div>We provide robust security measures, including data encryption, access  controls, and threat monitoring, safeguarding your sensitive information  in the cloud.</div>
-                        </div>
-
-                       </div>
+                        <input type="text" class="putInfo_for_contacts" name="name"  required placeholder="Your full name"> 
+                      </div>
+                      <div>
+                       
+                         <input type="email" name="email"  class="putInfo_for_contacts" required placeholder="Your email address">
+                      </div>
+                      <div>
+                        
+                         <input type="tel" name="phone"  class="putInfo_for_contacts" required placeholder="Your phone number">
+                      </div>
+                      <div>
+                         
+                        <textarea type="text" name="text" class="text_field" placeholder="Message" required></textarea>
+                      </div>
+                     
+                     <div>
+                       <input type="submit" name="submit" class="button_for_contacts" value="Send Message">
+                     </div>
+      
+                     
                     </div>
-                
-                  
-        
-              </div>
-
-            </div>
-          
-   
-        </div>
-        <div class="service_block_two_container">
-            <div class="service_block_two">
-                <div class="center">
-                    <div class="service_block_button" id="bottom_menu1">
-                    <button class="load_btn" onclick="show_more_network_consalting()" id="load_btn_block_two">Modernisation & Migration</button>
-                </div>
-                </div>
-             
-                
-                <div class="description_security_network_consalting">
-                    <div class="step2 fade-in">
-                        <div class="step2_right">
-                           <div class="step_block_1">
-                            <h3 class="step_block_1_header">Present Challenges</h3>
-                            <hr class="step_block_1_line">
-                            <p class="step_block_1_txt">Current challenges in cloud migration include data  security concerns, compatibility issues with legacy systems, 
-                                cost  management complexities, and skill gaps in managing advanced cloud  technologies.</p>
-                        </div> 
-                        </div>
-                        
-                        <div class="step_block_2">
-                            <div class="step_block_2_img">
-                             <img src="img/img7.png" alt=""> 
-                            </div>
-                            <div class="step_block_2_info">
-                                <h3 class="step_block_1_header">Our Solutions</h3>
-                                <hr class="step_block_1_line">
-                                <ul class="step_block_2_txt">Our cloud services are the ultimate solution  for businesses seeking enhanced efficiency and agility. 
-                                    We ensure  optimized cloud performance, seamless transitions, and innovative  practices for sustained success in the digital era.
-                                     We can assist with the following:
-                                    <li>Cloud Migration and Transformation</li>
-                                    <li>Cloud-native Modernisation</li>
-                                    <li>Site Reliability Engineering (SRE)</li>
-                                 
-                                    
-                                    
-                                </ul>
-                            </div>
+                   
+                            
                     
+                    <input type="hidden" name="formData" value="Contacts form from profile_Irina">
+                  </form>
+            </div>
+        </div>
+       
+        <div class="up_page">
+            <a class="up_page_arrow" href="#up"></a>
 
-                        </div>
-                        <div class="step_block_3">
-                            <h3 class="step_block_1_header">Benefits</h3>
-                            <hr class="step_block_1_line">
-                            <div class="step_block_3_info">
-                                <div>Our cloud modernization and migration services streamline operations,  
-                                    reducing downtime and boosting productivity through optimized workflows  and resource utilization.</div>
-                                <div>Benefit from scalable infrastructure and flexible deployment options,  
-                                    enabling your business to adapt quickly to changing demands and  opportunities.</div>
-                                <div>Our services help minimize infrastructure costs and optimize spending,  ensuring you achieve cost savings while leveraging the latest cloud  technologies for maximum ROI.</div>
-                            </div>
+        </div>
+        <footer>
+            <div class="footer_container">
+                <a href="index.html" class="footer_logo"><img src="img/logo.svg" alt=""></a>
+                <div class="site_map_footer">
+                    <h4>Site Map</h4>
+                    <a href="consalting.html">Our Services</a>
+                    <a href="#">Success Cases</a>
+                    <a href="#">Contact Us</a>
 
-                        </div>
-                    </div>
+                </div>
+                <div class="contact_footer">
+                    <h4>Contact</h4>
+                    <p>14 Grenaby Avenue, Croydon CR0 2EG</p>
+                    <a href="mailto:contactus@vsamtechnologies.com">contactus@vsamtechnologies.com</a>
+                    <a class="tel" href="tel:+4402084057168">+44 (0) 208 405 7168</a>
                 </div>
             </div>
-        </div>
-        <div class="service_block_one_container">
-            <div class="service_block_one">
-                <div class="service_block_button" id="bottom_menu2">
-                    <button class="load_btn" onclick="show_more_infrastructure_consalting()" id="load_btn_block_three">Cloud Security</button>
-                </div>
-             
-                <div class="description_security_consalting">
-                    <div class="step3 fade-in">
-                       <div class="step_block_1">
-                            <h3 class="step_block_1_header">Present Challenges</h3>
-                            <hr class="step_block_1_line">
-                            <p class="step_block_1_txt">Current challenges in cloud security include data breaches due to  misconfigured or unsecured cloud resources, 
-                                lack of visibility into  cloud environments, compliance with data protection regulations, and the  complexity of managing multiple cloud services while maintaining robust  security measures.</p>
-                       </div>
-                       <div class="step_block_2">
-                            <div class="step_block_2_img">
-                            <img src="img/img8.png" alt=""> 
-                            </div>
-                            <div class="step_block_2_info">
-                                <h3 class="step_block_1_header">Our Solutions</h3>
-                                <hr class="step_block_1_line">
-                                <ul class="step_block_2_txt">Our cloud security services provide a comprehensive solution to  safeguard your digital assets. We offer advanced threat detection, data  encryption, access controls, 
-                                    and compliance management to ensure the  highest level of security for your cloud infrastructure and  applications.
-                                                                    
-                                    
-                                </ul>
-                            </div>
-                        
-
-                       </div>
-                       <div class="step_block_3">
-                        <h3 class="step_block_1_header">Benefits</h3>
-                        <hr class="step_block_1_line">
-                        <div class="step_block_3_info">
-                            <div>We employ advanced threat detection mechanisms  to identify and mitigate potential security risks in real-time, ensuring  proactive protection against cyber threats.</div>
-                            <div>Benefit from robust access control and identity management solutions,  preventing unauthorized access to critical resources in your cloud  environment.</div>
-                            <div>We offer strong access control and identity management, ensuring effective user permissions and preventing unauthorized access to critical cloud resources.</div>
-                        </div>
-
-                       </div>
-                    </div>
-                
-                  
-        
-              </div>
-
-            </div>
-          
-   
-        </div>
-
+            
+        </footer>
     </div>
-    <div class="up_page">
-        <a class="up_page_arrow" href="#up"></a>
 
-    </div>
-    <footer>
-        <div class="footer_container">
-            <a href="#" class="footer_logo"><img src="img/logo.svg" alt=""></a>
-            <div class="site_map_footer">
-                <h4>Site Map</h4>
-                <a href="consalting.html">Our Services</a>
-                <a href="#">Success Cases</a>
-                <a href="#">Contact Us</a>
-
-            </div>
-            <div class="contact_footer">
-                <h4>Contact</h4>
-                <p>14 Grenaby Avenue, Croydon CR0 2EG</p>
-                <a href="mailto:contactus@vsamtechnologies.com">contactus@vsamtechnologies.com</a>
-                <a class="tel" href="tel:+4402084057168">+44 (0) 208 405 7168</a>
-            </div>
-        </div>
-        
-    </footer>
-    
-    <script src="scripts/service_menu.js"></script>
-    <script src="scripts/show_more.js"></script>
   
     
 </body>
