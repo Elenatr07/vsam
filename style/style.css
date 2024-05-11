@@ -172,7 +172,8 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 .menu_item:hover{
-  text-shadow: 1px 1px 3px rgba(43, 61, 145, 1), -1px -1px 3px #FFF, 1px 1px rgba(43, 61, 145, 1), -1px -1px #FFF; color:rgba(43, 61, 145, 1);
+  font-weight: 600;
+  color:rgba(157, 15, 15, 1);
   
 }
 
@@ -474,6 +475,14 @@ span {
     margin-top: 89px;
 
 }
+.about_us_link:hover{
+  background: rgba(157, 15, 15, 1);
+  
+}
+.about_us_link a:hover{
+  color: rgba(252, 250, 249, 1);
+}
+
 .about_us_link a{
      color: rgba(0, 0, 0, 1);
      width: 388px;
@@ -911,6 +920,15 @@ footer{
   justify-content: right;
   padding: 0 50px;
 }
+
+.up_page_arrow:hover{
+background:rgba(157, 15, 15, 1);
+transform: scale(0.95);
+}
+.up_page_arrow:hover::before{
+  color: rgba(255, 255, 255, 1);
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn ease-in 1;
@@ -930,6 +948,9 @@ footer{
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-color: rgba(157, 15, 15, 1)
+}
+.menu_item u:hover{
+  color: rgba(157, 15, 15, 1);
 }
 
 .cloud{
@@ -1014,7 +1035,8 @@ footer{
   margin-bottom: 60px;
 
 }
-.field_contacts input{
+.field_contacts input,
+#phone{
   max-width: 735px;
   width: 100%;
   height: 53px;
@@ -1029,10 +1051,20 @@ footer{
   letter-spacing: 0.1em;
   text-align: left;
  
-  
-  
-
 }
+#phone{
+  padding: 0 0 0 60px;
+}
+.field_contacts input:hover,
+#phone:hover,
+.field_contacts textarea:hover{
+  border: 2px solid rgba(157, 15, 15, 1);
+ /* box-shadow: 0 0 20px white;*/
+}
+#phone{
+  
+}
+
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 input[type=tel]::placeholder,
@@ -1056,6 +1088,11 @@ textarea[type=text]::placeholder
   background: rgba(248, 248, 255, 1);
   padding: 18px 23px;
   margin-bottom: 50px;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
 
 
 }
@@ -1072,6 +1109,10 @@ textarea[type=text]::placeholder
   text-align: center !important;
   
 
+}
+.button_for_contacts:hover{
+  border: 2px solid rgba(255, 255, 255, 1) !important;
+  transform: scale(0.98);
 }
 .success{
   max-width: 1920px;
@@ -1096,7 +1137,43 @@ textarea[type=text]::placeholder
 .success_back u{
   text-decoration: underline;
 text-underline-offset: 20px;
-}    
+}  
+
+/*style for intTel*/
+.iti {
+  display: block !important;
+  margin-bottom: 45px;
+}
+.iti .iti__selected-dial-code{
+  font-family: "Kodchasan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+}
+/*end of style for intTel*/
+
+.hide{
+  display: none;
+}
+
+.error{
+  box-shadow:0 0 20px rgba(157, 15, 15, 1);
+ 
+
+}
+.tel_error{
+  text-align: center;
+  display: block;
+  margin-bottom: 17px;
+  margin-top: -27px;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 1);
+}
 
 
 

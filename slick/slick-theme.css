@@ -45,30 +45,36 @@
     background: transparent;
 }
 .slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
+.slick-next:hover
+
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: rgba(157, 15, 15, 1);
+    
 }
 .slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
+.slick-next:hover:before
 {
     opacity: 1;
+    color: rgba(248, 248, 255, 1);
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before,
 .slick-next.slick-disabled,
 .slick-prev.slick-disabled
-
-
 {
     opacity: .25;
 }
+.slick-prev.slick-disabled:hover,
+.slick-next.slick-disabled:hover{
+    background: transparent; 
+}
+.slick-prev.slick-disabled:hover::before,
+.slick-next.slick-disabled:hover::before{
+    color: rgba(157, 15, 15, 1);
+}
+
 
 .slick-prev:before,
 .slick-next:before

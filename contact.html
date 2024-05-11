@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/css/intlTelInput.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +65,7 @@
             <div class="contact_form">
                 <h3 class="contact_form_header">Send us a message</h3>
                 <hr>
-                <form action="mail.php" id="form_contacts" method="post">
+                <form action="mail.php" id="form" method="post">
               
                     <div class="field_contacts">
                       <div>
@@ -73,8 +77,10 @@
                          <input type="email" name="email"  class="putInfo_for_contacts" required placeholder="Your email address">
                       </div>
                       <div>
-                        
-                         <input type="tel" name="phone"  class="putInfo_for_contacts" required placeholder="Your phone number">
+                        <input type="tel" name="phone" id="phone"  class="putInfo_for_contacts" required placeholder="Your phone number">
+                      <!--<p id="message"></p>-->  
+                 
+                      <span id="error-msg" class="hide"></span>
                       </div>
                       <div>
                          
@@ -82,7 +88,7 @@
                       </div>
                      
                      <div>
-                       <input type="submit" name="submit" class="button_for_contacts" value="Send Message">
+                       <input type="button" name="submit" class="button_for_contacts" value="Send Message" id="btn">
                      </div>
       
                      
@@ -90,9 +96,10 @@
                    
                             
                     
-                    <input type="hidden" name="formData" value="Contacts form from profile_Irina">
+                    <input type="hidden" name="formData" value="Message was send from Contacts-form VSAM Technologies Ltd. website ">
                   </form>
             </div>
+            
         </div>
        
         <div class="up_page">
@@ -120,7 +127,78 @@
         </footer>
     </div>
 
+   
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        const button = document.querySelector("#btn");
+        
+         const errorMsg = document.querySelector("#error-msg");
+         const errorMap = ["Invalid number", "Invalid country code", "Your numder is too short", "Your numder is too long"];
+         
+            const message = document.querySelector("#message");  
+           const form = document.querySelector("#form");
+          const iti = window.intlTelInput(input, {
+       
+        hiddenInput: () => ({ phone: "phone_full", country: "country_code" }),
+        allowExtensions: true,
+        separateDialCode: true,
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/utils.js" // just for formatting/placeholders etc
+        });
+        const reset = () => {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+        errorMsg.classList.remove("tel_error")
+        };
+
+        const showError = (msg) => {
+        input.classList.add("error");
+        errorMsg.innerHTML = msg;
+        errorMsg.classList.remove("hide");
+        errorMsg.classList.add("tel_error")
+        };
+
+        // on click button: validate
+        button.addEventListener('click', () => {
+        reset();
+        if (!input.value.trim()) {
+            showError("Required. Enter your phone number");
+           
+            input.classList.add("error")
+        } else if (iti.isValidNumberPrecise()) {
+            button.type = "submit"
+        } else {
+            const errorCode = iti.getValidationError();
+            const msg = errorMap[errorCode];
+            showError(msg);
+        }
+        });
+
+        // on keyup / change flag: reset
+        input.addEventListener('change', reset);
+        input.addEventListener('keyup', reset);
+
   
+   
+          
+       
+       
+      </script>
+      <script>
+      
+     
+
+
+
+
+
+       
+
+      
+       
+</script>
+   
     
 </body>
 </html>
