@@ -1209,7 +1209,9 @@ textarea[type=text]::placeholder
 .main_content_slider{
   max-width:800px;
   width: 100%;
-  margin: auto;
+  display: none;
+   margin: auto;
+   padding: 232px 10px 180px 0px;
 }
 
 
@@ -1312,7 +1314,49 @@ textarea[type=text]::placeholder
     margin-left: 31px;
     margin-bottom: 15px;
   }
+  .main_content_slider{
+    display: block;
+  }
+  .main_content{
+    display: none;
+  }
   
+  #variable .slick-slide.slick-current.slick-active.slick-center{
+    width: 14.9% !important;
+    margin: 0 20px 0 20px;
+    height: 650px;
+  }
+  .why_choose_us{
+    padding: 120px 0;
+  }
+  
+  
+  #variable .slick-slide {
+    margin: 0px 20px 0 20px;
+    height: 650px;
+    width: 11% !important;
+}
+#variable .slick-list{
+  height: 680px;
+
+}
+#variable .slick-slide:nth-child(1) {
+  background: rgba(43, 61, 145, 1);
+  margin: 0 20px;
+}
+#variable .slick-slide:nth-child(2) {
+  background: rgba(43, 61, 145, 1)
+}
+#variable .slick-slide:nth-child(3) {
+  background: red;
+  margin: 0 10px 0 0;
+}
+#variable .slick-slide:nth-child(4) {
+  background: red
+}
+#variable .slick-slide{
+  background: rgba(43, 61, 145, 1)
+}
 }
 
 
