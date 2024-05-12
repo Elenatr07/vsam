@@ -108,7 +108,7 @@
 
         </div>
         <div class="main_content_slider">
-            <section class="regular slider">
+            <section class="regular slider" id="regular">
                 <div>
                   <h3 class="consalting_header">Cost Savings</h3>
                   <hr class="slider_line">
@@ -136,10 +136,15 @@
                   </div>
                 </div>
                 <div>
-                  <h3 class="slider_header">Expertise & Experience</h3>
+                  <h3 class="consalting_header">Expertise & Experience</h3>
                   <hr class="slider_line">
-                  <p class="slider_txt">With our seasoned IT expertise and rich experience, we guide clients through digital challenges, optimizing operations and fostering innovation. 
-                    Trust us to elevate your IT strategy and achieve unparalleled success.</p>
+                  <div class="text_in_service">
+                    <ul>Cloud Solutions:
+                        <li>Hosting</li>
+                        <li>Migration</li>
+                        <li>System Support</li>
+                    </ul>
+                  </div>
                 </div>
                 
              
@@ -167,7 +172,7 @@
           
            
             </div>
-            <section class="variable slider">
+            <section class="variable slider" id="variable">
                 <div>
                   <h3 class="slider_header">Cost Savings</h3>
                   <hr class="slider_line">
@@ -233,12 +238,17 @@
        centerMode: false,
         responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 801,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false,
+        centerMode: true,
+        centerPadding: '20vw',
+        variableWidth: false,
+        arrows : false,
+        initialSlide: 2,
       }
     }]
       });
@@ -253,12 +263,12 @@
      $(document).on('ready', function() {
       $(".regular").slick({
         dots: false,
-        infinite:true,  
+        infinite: true,  
         variableWidth: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         accessibility: false,
-       centerMode: false,
+       centerMode: true,
        arrows : false,
         
       });

@@ -1,7 +1,7 @@
 .slider {
     /*width: 50%;*/
     margin: 100px auto;
-  /*  width: 1920px;*/
+  max-width: 1920px;
     margin: 100px auto;
     height: 600px;
 }
@@ -14,7 +14,9 @@
   width: 100%;
 }
 
-
+#regular{
+    width: 800px;
+}
 
 
 .slick-slide {
