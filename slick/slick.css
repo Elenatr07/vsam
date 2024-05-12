@@ -123,3 +123,30 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+.regular .slick-slide.slick-current{
+    width: 595px !important;
+}
+.regular .slick-slide{
+   margin: 0px 0px 0 40px; 
+   height: 700px;
+   opacity: 0.8;
+   width: 595px;
+   
+  
+}
+
+.regular .slick-slide:nth-child(1n) {
+    background: rgba(43, 61, 145, 1);
+    
+    
+}
+.regular .slick-slide .slick-active{
+    margin-left: 30px;
+}
+
+.regular .slick-list{
+    height: 800px;
+}
+.regular .slick-current{
+    height: 700px;
+}

@@ -107,6 +107,44 @@
             </div>
 
         </div>
+        <div class="main_content_slider">
+            <section class="regular slider">
+                <div>
+                  <h3 class="consalting_header">Cost Savings</h3>
+                  <hr class="slider_line">
+                  <div class="text_in_service">
+                    <p>Governance & Compliance</p>
+                    <ul>Infrastructure:
+                        <li>Design & Structure</li>
+                        <li>BCP, Governance</li>
+                        <li>Consolidation</li>
+                        <li>Collaboration & Board Room</li>
+                    </ul>
+                    <br>
+                    <ul>Security:
+                        <li>Policy & Procedures</li>
+                        <li>Security Structure</li>
+                        <li>Security Policy Management</li>
+                    </ul>
+                    <br>
+                    <ul>Network:
+                        <li>Strategy, Planning, Policy</li>
+                        <li>Assessment & Optimization</li>
+                        <li>Software Defined Network</li>
+                        <li>VOIP</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="slider_header">Expertise & Experience</h3>
+                  <hr class="slider_line">
+                  <p class="slider_txt">With our seasoned IT expertise and rich experience, we guide clients through digital challenges, optimizing operations and fostering innovation. 
+                    Trust us to elevate your IT strategy and achieve unparalleled success.</p>
+                </div>
+                
+             
+              </section>
+        </div>
         <div class="about_us_container">
             <div class="about_us_block">
                 <img src="img/img2.png" alt="">
@@ -205,6 +243,25 @@
     }]
       });
  
+    });
+   
+ 
+
+
+  </script>
+  <script>
+     $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: false,
+        infinite:true,  
+        variableWidth: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        accessibility: false,
+       centerMode: false,
+       arrows : false,
+        
+      });
     });
   </script>
     <script src="scripts/style_menu.js"></script>

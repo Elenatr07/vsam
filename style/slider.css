@@ -1,7 +1,7 @@
 .slider {
     /*width: 50%;*/
     margin: 100px auto;
-    width: 1920px;
+  /*  width: 1920px;*/
     margin: 100px auto;
     height: 600px;
 }
@@ -102,4 +102,10 @@
     color: rgba(255, 255, 255, 1);
 
 
+}
+.main_content_slider{
+    height: 800px;
+}
+section .regular .slider{
+    width: 800px !important;
 }

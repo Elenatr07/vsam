@@ -53,7 +53,7 @@ a {
   height: 5px;
   position: relative;
   width: 35px;
-  background: rgba(139, 82, 238, 1);
+  background: rgba(43, 61, 145, 1);
   transform: matrix(1, 0, 0, -1, 0, 0);
   border-radius: 10px;
 }
@@ -68,7 +68,7 @@ a {
   position: absolute;
   transition: all 0.2s ease-out;
   width: 100%;
-  background: rgba(139, 82, 238, 1);
+  background: rgba(43, 61, 145, 1);
 
   transform: matrix(1, 0, 0, -1, 0, 0);
   border-radius: 10px;
@@ -1204,6 +1204,7 @@ textarea[type=text]::placeholder
 
 
 
+
 @media screen and (min-width: 801px) and (max-width: 4000px) {
   #nav_shadow {
     display: none;
@@ -1227,24 +1228,79 @@ textarea[type=text]::placeholder
     display: none;
   }
 }
+@media(max-width:1500px){
+  .consulting, .other_service{
+    width:47%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .appearing_block_heade{
+  font-size: 52px;
+  }
+  .appearing_block_txt, 
+  .step_block_1_txt, 
+  .step_block_2_txt, 
+  .step_block_3_info,
+  .appearing_block_button, 
+  .about_us_link a{
+    font-size: 24px;
+  }
+  .contant_header, 
+  .about_us-info_header, 
+  .slider_block h3, 
+  .load_btn {
+    font-size: 46px;
+  }
+  .consalting_header, 
+  .other_service_header, 
+  .step_block_1_header{
+    font-size: 33px;
+  }
+  .text_in_service p, 
+  .text_in_service ul, 
+  .text_in_service li{
+    font-size: 17px;
+  }
+}
+
+@media(max-width:1441px){
+  .main_block img {
+      max-width: auto;
+      height: auto;
+
+  }
+  .appearing_block{
+    position: relative;
+    margin: auto;
+    left: 0;
+
+  }
+}
 @media(max-width:800px) {
   .menu_items {
     display: flex;
     flex-direction: column;
-    margin-top: 140px;
+    margin-top: 190px;
     padding: 0;
     text-align: center;
     width: 100%;
 }
 .side-menu:checked~nav {
-    max-height: 100vh;
+ /*   max-height: 100vh;*/
+ height: 633px;
 }
 .menu_item {
-    color: rgba(78, 27, 209, 1);
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 18px;
-    text-align: center;
-    margin-left: 0;
+    text-align: left;
+    margin-left: 32px;
+
+}
+.menu_item_name img{
+  width: 208px;
+  margin-left: 31px;
+  margin-bottom: 15px;
 }
 }
+
