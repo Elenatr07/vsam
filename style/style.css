@@ -1322,7 +1322,7 @@ textarea[type=text]::placeholder
   }
   
   #variable .slick-slide.slick-current.slick-active.slick-center{
-    width: 14.9% !important;
+    width: 533px !important;
     margin: 0 20px 0 20px;
     height: 650px;
   }
@@ -1334,10 +1334,11 @@ textarea[type=text]::placeholder
   #variable .slick-slide {
     margin: 0px 20px 0 20px;
     height: 650px;
-    width: 11% !important;
+    width: 416px !important;
 }
 #variable .slick-list{
   height: 680px;
+  padding: 0 100px 0  100px;
 
 }
 #variable .slick-slide:nth-child(1) {
