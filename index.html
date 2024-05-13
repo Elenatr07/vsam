@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style/style.css">
+  
    <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-  <link rel="stylesheet" href="style/slider.css">
+  <link rel="stylesheet" href="style/slider.css"> 
+  <link rel="stylesheet" href="style/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -108,6 +109,7 @@
 
         </div>
         <div class="main_content_slider">
+            <h2 class="contant_header">Our Services</h2>
             <section class="regular slider" id="regular">
                 <div>
                   <h3 class="consalting_header">Cost Savings</h3>
@@ -242,7 +244,7 @@
        centerMode: false,
         responsive: [
     {
-      breakpoint: 801,
+      breakpoint: 1301,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -270,11 +272,12 @@
       $(".regular").slick({
         dots: false,
         infinite: true,  
-        variableWidth: false,
+        variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         accessibility: false,
-       centerMode: true,
+        //centerPadding: '13.9vw',
+       centerMode: false,
        arrows : false,
         
       });
