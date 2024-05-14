@@ -57,9 +57,12 @@
         </div>
         <div class="service_block_one_container">
             <div class="service_block_one">
-                <div class="service_block_button" id="bottom_menu">
+                <div class="box">
+                    <div class="service_block_button" id="bottom_menu">
                     <button class="load_btn" onclick="show_more_security_consalting()" id="load_btn_block_one">Security Consulting</button>
                 </div>
+                </div>
+                
              
                 <div class="description_security_consalting">
                     <div class="step1 fade-in">
@@ -105,8 +108,12 @@
                             </div>
 
                        </div>  
-                       <div class="step_block3_slider1">
-                           <section class="consalting_center_slider1" id="consalting_center_slider1">
+                       
+                 
+                    </div>
+                  <div class="step1 padding">
+                         <div class="step_block3_slider1">
+                           <section class="consalting_center_slider1 slider" id="consalting_center_slider1">
                                 <div>
                                 <p class="step_block3_slider_info">Our VSAM security consulting services conduct thorough risk assessments,  
                                     identifying vulnerabilities and providing tailored strategies to  mitigate threats effectively.</p>
@@ -122,10 +129,10 @@
                         
                             </section>
 
+                    
+                       </div>
+                      
                         </div>
-                 
-                    </div>
-                  
                 
                   
         
@@ -137,10 +144,13 @@
         </div>
         <div class="service_block_two_container">
             <div class="service_block_two">
-                <div class="service_block_button_center">
+                <div class="box">
+                    <div class="service_block_button_center">
                     <div class="service_block_button" id="bottom_menu1">
                     <button class="load_btn" onclick="show_more_network_consalting()" id="load_btn_block_two">Network Consulting</button>
                 </div>
+                </div>
+               
                 </div>
              
                 
@@ -193,9 +203,12 @@
         </div>
         <div class="service_block_one_container">
             <div class="service_block_one">
-                <div class="service_block_button" id="bottom_menu2">
-                    <button class="load_btn" onclick="show_more_infrastructure_consalting()" id="load_btn_block_three">Infrastructure Consulting </button>
+                <div class="box">
+                    <div class="service_block_button" id="bottom_menu2">
+                        <button class="load_btn" onclick="show_more_infrastructure_consalting()" id="load_btn_block_three">Infrastructure Consulting </button>
+                    </div>
                 </div>
+                
              
                 <div class="description_security_consalting">
                     <div class="step3 fade-in">
@@ -273,16 +286,14 @@
   <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).on('ready', function() {
-
-       
-        $(".consalting_center_slider1").slick({
+       $("#consalting_center_slider1").slick({
           dots: true,
           infinite: true,
           centerMode: true,
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerPadding: '13.9vw',
-          initialSlide: 2,
+          initialSlide: 1,
           arrows : false,
           variableWidth: true,
         });

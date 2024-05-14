@@ -18,24 +18,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-#consalting_center_slider1.slick-slider
-{
-    position: relative;
 
-    display: block;
-    box-sizing: border-box;
-
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
 #variable.slider
 {
     margin: 100px 0 0 0;
@@ -45,6 +28,16 @@
 {
     position: relative;
     height: 600px;
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+#consalting_center_slider1 .slick-list
+{
+    position: relative;
+    height: 485px;
     display: block;
     overflow: hidden;
 
@@ -72,6 +65,16 @@
 }
 
 .slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+#consalting_center_slider1 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
     -webkit-transform: translate3d(0, 0, 0);
@@ -204,4 +207,7 @@
 #regular .slick-slide.slick-current.slick-active.slick-center .consalting_header,
 #regular .slick-slide.slick-current.slick-active.slick-center .text_in_service{
     color: black
+}
+#consalting_center_slider1 .slick-slide{
+    width: 600px;
 }
