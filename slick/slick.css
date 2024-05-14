@@ -161,9 +161,12 @@
     box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
    
 }
-#regular .slick-slide.slick-current.slick-active .consalting_header,
+
 #regular .slick-slide.slick-current.slick-active .text_in_service{
     color: black;
+}
+#regular .slick-slide.slick-current.slick-active .consalting_header{
+    color:rgba(43, 61, 145, 1) ;
 }
 
 
