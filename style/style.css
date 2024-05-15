@@ -2100,8 +2100,11 @@ textarea[type=text]::placeholder
 #consalting_center_slider1 .slick-list,
 #consalting_center_slider2 .slick-list,
 #consalting_center_slider3 .slick-list {
-  height: 397px;
+  height: 379px;
 }
+
+
+
 .step_block_1_line,.step_block_2_line,
 .step_block_3_line
  {
@@ -2119,6 +2122,9 @@ textarea[type=text]::placeholder
 }
 #bottom_menu, #bottom_menu2 {
   margin-top: 60px;
+}
+.step_block3_slider1 {
+    height: 413px;
 }
 }
 @media(max-width:560px){
