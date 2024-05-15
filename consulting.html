@@ -132,7 +132,7 @@
                     
                        </div>
                       
-                        </div>
+                    </div>
                 
                   
         
@@ -197,14 +197,37 @@
                             </div>
 
                         </div>
-                    </div>
+                      
+                    </div>  
+                    <div class="step2 padding">
+                            <div class="step_block3_slider1">
+                              <section class="consalting_center_slider2 slider" id="consalting_center_slider2">
+                                   <div>
+                                   <p class="step_block3_slider_info">VSAM Network Consulting enhances network performance, ensuring efficient  data transmission, reduced latency, 
+                                    and improved user experience across  your infrastructure.</p>
+                                   </div>
+                                   <div>
+                                   <p class="step_block3_slider_info">Benefit from scalable network solutions that can adapt to changing  demands, 
+                                    enabling seamless growth and resource allocation based on  business needs.</p>
+                                   </div>
+                                   <div>
+                                   <p class="step_block3_slider_info">Our VSAM consulting ensures robust security with firewalls, encryption, 
+                                    and  access controls, protecting your network from cyber threats and  unauthorized access.</p>
+                                   </div>
+                           
+                               </section>
+   
+                       
+                            </div>
+                         
+                       </div>
                 </div>
             </div>
         </div>
         <div class="service_block_one_container">
             <div class="service_block_one">
                 <div class="box">
-                    <div class="service_block_button" id="bottom_menu2">
+                    <div class="service_block_button consalt" id="bottom_menu2">
                         <button class="load_btn" onclick="show_more_infrastructure_consalting()" id="load_btn_block_three">Infrastructure Consulting </button>
                     </div>
                 </div>
@@ -236,16 +259,38 @@
 
                        </div>
                        <div class="step_block_3">
-                        <h3 class="step_block_1_header">Benefits</h3>
-                        <hr class="step_block_1_line">
-                        <div class="step_block_3_info">
-                            <div>NVSAM Infrastructure Services optimize system performance, enhancing data  processing speed, application responsiveness, and overall operational  efficiency.</div>
-                            <div>Benefit from scalable infrastructure solutions that adapt to growing  demands, ensuring consistent performance and reliability even during  peak usage periods.</div>
-                            <div>Our services help reduce infrastructure costs through efficient resource  allocation, capacity planning, and optimization, maximizing ROI and  minimizing operational expenses.</div>
-                        </div>
+                            <h3 class="step_block_1_header">Benefits</h3>
+                            <hr class="step_block_1_line">
+                            <div class="step_block_3_info">
+                                <div>NVSAM Infrastructure Services optimize system performance, enhancing data  processing speed, application responsiveness, and overall operational  efficiency.</div>
+                                <div>Benefit from scalable infrastructure solutions that adapt to growing  demands, ensuring consistent performance and reliability even during  peak usage periods.</div>
+                                <div>Our services help reduce infrastructure costs through efficient resource  allocation, capacity planning, and optimization, maximizing ROI and  minimizing operational expenses.</div>
+                            </div>
 
                        </div>
+                       
                     </div>
+                    <div class="step3 padding">
+                        <div class="step_block3_slider1">
+                          <section class="consalting_center_slider3 slider" id="consalting_center_slider3">
+                               <div>
+                               <p class="step_block3_slider_info">NVSAM Infrastructure Services optimize system performance, enhancing data  processing speed, application responsiveness, and overall operational  efficiency.</p>
+                               </div>
+                               <div>
+                               <p class="step_block3_slider_info">Benefit from scalable infrastructure solutions that adapt to growing  demands, 
+                                ensuring consistent performance and reliability even during  peak usage periods.</p>
+                               </div>
+                               <div>
+                               <p class="step_block3_slider_info">Our services help reduce infrastructure costs through efficient resource  allocation, 
+                                capacity planning, and optimization, maximizing ROI and  minimizing operational expenses.</p>
+                               </div>
+                       
+                           </section>
+
+                   
+                        </div>
+                     
+                   </div>
                 
                   
         
@@ -297,6 +342,36 @@
           arrows : false,
           variableWidth: true,
           autoplay: true
+          
+        });
+    });
+    $(document).on('ready', function() {
+       $("#consalting_center_slider2").slick({
+          dots: true,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '13.9vw',
+          initialSlide: 2,
+          arrows : false,
+          variableWidth: true,
+          autoplay: true,
+          
+        });
+    });
+    $(document).on('ready', function() {
+       $("#consalting_center_slider3").slick({
+          dots: true,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '13.9vw',
+          initialSlide: 2,
+          arrows : false,
+          variableWidth: true,
+          autoplay: true,
           
         });
     })
