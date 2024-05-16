@@ -2357,6 +2357,14 @@ textarea[type=text]::placeholder
   font-size: 13px;
   margin-top: -15px;
 }
+.field_contacts input, #phone{
+  font-size: 13px;
+  height: 45px;
+}
+.iti .iti__selected-dial-code{
+  font-size: 13px;
+}
+
 
 }
 @media(max-width:500px){
@@ -2574,10 +2582,7 @@ textarea[type=text]::placeholder
 .iti {
   margin-bottom: 30px;
 }
-.field_contacts input, #phone{
-  font-size: 13px;
-  height: 45px;
-}
+
 .contact_form{
   height: 810px;
 }
