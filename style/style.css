@@ -1409,6 +1409,9 @@ textarea[type=text]::placeholder
   font-size: 43px;
   line-height: 68.5px;
 }
+.success_back {
+  font-size: 36px;
+}
 }
 
 @media(max-width:1441px){
@@ -1727,6 +1730,13 @@ textarea[type=text]::placeholder
     pointer-events:visible;
     cursor: pointer;
 }
+.success_text {
+  font-size: 37px;
+  line-height: 57.5px;
+}
+.success_back {
+  font-size: 25px;
+}
 
 }
 @media(max-width:900px){
@@ -1770,6 +1780,13 @@ textarea[type=text]::placeholder
   }
   #bottom_menu, #bottom_menu2, #bottom_menu1 {
     width: 58%;
+}
+.success_text {
+  font-size: 34px;
+  line-height: 55.5px;
+}
+.success_back {
+  font-size: 23px;
 }
 
 }
@@ -2051,6 +2068,15 @@ textarea[type=text]::placeholder
    {
     margin: 0px 30px 0 0;
 }
+.success_text {
+  font-size: 28px;
+}
+.success_back {
+  font-size: 21px;
+}
+.success{
+  padding: 60px;
+}
 }
 @media(max-width:700px){
     #variable .slick-slide.slick-current.slick-active.slick-center,
@@ -2105,9 +2131,19 @@ textarea[type=text]::placeholder
 .contact_info_item a {
   margin-left: 15px;
 }
-.contact_info_header, .success_text {
+.contact_info_header {
   font-size: 30px;
 }
+.success_text {
+  font-size: 24px;
+}
+.success_back {
+  font-size: 19px;
+}
+.success {
+  padding: 30px;
+}
+
 }
 @media(max-width:650px){
   .regular .slick-slide:nth-child(1n) {
@@ -2504,8 +2540,15 @@ textarea[type=text]::placeholder
     margin-bottom: 18px;
     margin-top: 20px;
 }
-.contact_info_header, .success_text {
+.contact_info_header {
   font-size: 28px;
+  line-height: 44px;
+}
+.success_back {
+  font-size: 18px;
+}
+.success_text {
+  font-size: 21px;
   line-height: 44px;
 }
 .contact_info_item a {
@@ -2533,6 +2576,7 @@ textarea[type=text]::placeholder
 }
 .field_contacts input, #phone{
   font-size: 13px;
+  height: 45px;
 }
 .contact_form{
   height: 810px;
@@ -2580,6 +2624,13 @@ textarea[type=text]::placeholder
 }
 .tel_error {
   font-size: 12px;
+}
+.success_text {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.success_back {
+  font-size: 15px;
 }
 
 }
@@ -2793,7 +2844,7 @@ footer{
  {
   margin: 0px 23px 0 0;
 }
-.contact_info_header, .success_text {
+.contact_info_header {
   font-size: 25px;
   line-height: 37px;
 
@@ -2818,6 +2869,9 @@ footer{
 }
 .contact_form {
   height: 766px;
+}
+.success {
+  padding: 22px;
 }
 }
 
