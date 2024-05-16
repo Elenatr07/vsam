@@ -1250,7 +1250,7 @@ textarea[type=text]::placeholder
   width: 100%;
   display: none;
    margin: auto;
-   padding: 232px 10px 180px 0px;
+   padding: 232px 10px 130px 0px;
 }
 .about_us_block img{
   max-width: 794px;
@@ -2037,7 +2037,7 @@ textarea[type=text]::placeholder
     font-size: 19px;
   }
   .main_content_slider {
-    padding: 80px 10px 120px 0px;
+    padding: 80px 10px 30px 0px;
   }
   #variable .slider_header {
     font-size: 30px;
@@ -2330,7 +2330,7 @@ textarea[type=text]::placeholder
   height: 630px;
 }
 #regular.slider{
-  height: 540px;
+  height: 644px;
 }
 .about_us_block {
   padding: 60px 35px;
@@ -2405,7 +2405,7 @@ textarea[type=text]::placeholder
     margin-bottom:20px;
   }
   .main_content_slider {
-    padding: 74px 10px 60px 0px;
+    padding: 74px 10px 20px 0px;
   }
   .regular .slick-slide:nth-child(1n) {
     width: 3% !important;
@@ -2666,9 +2666,7 @@ textarea[type=text]::placeholder
 .appearing_block_button{
   padding-top: 8px;
 }
-#regular.slider {
-  margin: 0px 0 80px 30px;
-}
+
 .regular .slick-slide:nth-child(1n) {
   width: 2.89% !important;
 }
@@ -2700,7 +2698,8 @@ textarea[type=text]::placeholder
   padding: 74px 10px 0px 0px;
 }
 #regular.slider {
-  margin: 0px 0 40px 30px;
+  margin: 0px 0 70px 30px;
+  height: 528px;
 }
 .about_us_block {
   padding: 44px 25px;

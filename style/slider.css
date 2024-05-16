@@ -8,9 +8,9 @@
 }
 #regular.slider {
     width: 100%;
-    margin: 100px 0 100px 60px;
+    margin: 100px 0 0px 60px;
   max-width: 3000px;
-     height: 600px;
+     height: 730px;
 }
 
 .slick-slide {
