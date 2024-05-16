@@ -1,0 +1,129 @@
+#cookie_note{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    padding: 40px;
+    background: rgba(249, 249, 252, 1);
+    box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
+
+    z-index: 999999;
+}
+
+#cookie_note div p{
+     color: black;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.5px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: auto 0;
+    
+    
+
+
+}
+#cookie_note div{
+    max-width: 1720px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookie_accept{
+    max-width: 160px;
+    width: 100%;
+    height: 53px;
+    border-radius: 35px;
+    background: rgba(43, 61, 145, 1);
+    font-family: "Kodchasan", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 0 70px;
+    border: none;
+    padding: 2px 22px 7px 22px;
+  
+}
+.cookie_accept:hover{
+    background: rgba(255, 255, 255, 1);
+    color: rgba(43, 61, 145, 1);
+    border: 2px solid rgba(43, 61, 145, 1);
+}
+@media(max-width:1700px){
+    #cookie_note div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cookie_accept{
+        margin: 30px auto 0 auto;
+        max-width: 338px;
+    }
+    #cookie_note div p{
+        text-align: center;
+    }
+}
+@media(max-width:1000px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 22px;
+    }
+
+}
+@media(max-width:900px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 20px;
+    }
+}
+@media(max-width:769px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 18px;
+    }
+}
+@media(max-width:650px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 17px;
+    }
+    #cookie_note div p{
+        line-height: 32px;
+    }
+    #cookie_note{
+        padding: 30px;
+    }
+}
+@media(max-width:500px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 16px;
+    }
+    #cookie_note div p{
+        line-height: 23px;
+    }
+}
+@media(max-width:430px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 15px;
+    }
+}
+@media(max-width:376px){
+    #cookie_note div p,
+    .cookie_accept{
+        font-size: 14px;
+    }
+    #cookie_note {
+        padding: 20px;
+    }
+    .cookie_accept {
+        margin: 20px auto 0 auto;
+    }
+}
