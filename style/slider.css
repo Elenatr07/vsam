@@ -135,6 +135,7 @@ section .regular .slider{
 {
   background: rgba(248, 248, 255, 1);
   box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
+  opacity: 1;
 
 }
 #consalting_center_slider1 .slick-slide,
