@@ -1950,9 +1950,17 @@ textarea[type=text]::placeholder
    {
     width: 473px;
 }
-.contact_info_header, .success_text{
+.contact_info_header{
   line-height: 50px;
 }
+.success_back{
+  margin-top: 25px;
+  margin-bottom: 34px;
+}
+.success_text{
+  line-height: 36px;
+}
+
 .contact_info_item a {
   margin-left: 18px;
 }
@@ -1982,6 +1990,9 @@ textarea[type=text]::placeholder
 }
 .contact_form {
   margin: 50px 0;
+}
+.success_back u {
+  text-underline-offset: 14px;
 }
 
 }
