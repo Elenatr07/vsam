@@ -8,7 +8,6 @@
     padding: 40px;
     background: rgba(249, 249, 252, 1);
     box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
-
     z-index: 999999;
 }
 
@@ -56,8 +55,8 @@
     color: rgba(43, 61, 145, 1);
     border: 2px solid rgba(43, 61, 145, 1);
 }
-.show{
-    display: block;
+#cookie_note.show{
+    display: flex;
 }
 @media(max-width:1700px){
     #cookie_note div{
