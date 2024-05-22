@@ -14,14 +14,14 @@ const input1 = document.querySelector("#phone");
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/utils.js" // just for formatting/placeholders etc
         });
         const reset = () => {
-        input.classList.remove("error");
+        input1.classList.remove("error");
         errorMsg.innerHTML = "";
         errorMsg.classList.add("hide");
         errorMsg.classList.remove("tel_error")
         };
 
         const showError = (msg) => {
-        input.classList.add("error");
+        input1.classList.add("error");
         errorMsg.innerHTML = msg;
         errorMsg.classList.remove("hide");
         errorMsg.classList.add("tel_error")
@@ -30,10 +30,10 @@ const input1 = document.querySelector("#phone");
         // on click button: validate
         button.addEventListener('click', () => {
         reset();
-        if (!input.value.trim()) {
+        if (!input1.value.trim()) {
             showError("Required. Enter your phone number");
            
-            input.classList.add("error")
+            input1.classList.add("error")
         } else if (iti.isValidNumberPrecise()) {
             button.type = "submit"
         } else {
