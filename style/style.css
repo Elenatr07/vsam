@@ -508,6 +508,8 @@ span {
 .footer_logo{
   display: block;
   margin: auto 0;
+  max-width: 890px;
+  width: 100%;
 }
 footer{
   background: rgba(248, 248, 255, 1);
@@ -520,7 +522,7 @@ footer{
   max-width:1920px;
   width: 100%;
   margin: auto;
-  padding: 46px 118px;
+  padding: 46px 100px 65px 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -1229,13 +1231,16 @@ textarea[type=text]::placeholder
   color: rgba(255, 255, 255, 1);
 }
 .copyright{
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
-  max-width: 380px;
+  max-width: 1920px;
   width: 100%;
+  padding: 0 100px;
 
 }
-.copyright p{
+.copyright p,
+.copyright p a{
   font-family: 'Kodchasan', sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -1243,7 +1248,30 @@ textarea[type=text]::placeholder
   text-align: left;
   color: rgba(0, 0, 0, 1);
     text-align: center;
+    color: rgba(0, 0, 0, 1);
+  display: flex;
  
+}
+.copyright p a{
+  display: flex;
+  margin-left: 5px;
+}
+.copyright a span{
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+
+
+}
+.copyright a:hover{
+  background: linear-gradient(75deg, rgba(247, 62, 148, 1), rgba(34, 220, 217, 1));
+  -webkit-background-clip: text;
+  font-weight: 400;
+  -webkit-text-fill-color: transparent;
+
 }
 .main_content_slider{
   max-width:1025px;
@@ -1278,6 +1306,12 @@ textarea[type=text]::placeholder
   letter-spacing: 0.1em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+}
+.map_contact{
+  display: flex;
+  max-width: 702px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 
@@ -1315,6 +1349,9 @@ textarea[type=text]::placeholder
 @media(max-width:1850px){
   .about_us_block img{
     width: 46%;
+  }
+  .footer_logo{
+    width: 37%;
   }
 
 }
@@ -1371,7 +1408,8 @@ textarea[type=text]::placeholder
   .contact_footer p{
     font-size: 17px;
   }
-  .footer_container{
+  .footer_container,
+  .copyright{
     padding: 46px 90px;
   }
   #bottom_menu1{
@@ -1408,6 +1446,8 @@ textarea[type=text]::placeholder
 .success_back {
   font-size: 36px;
 }
+
+
 }
 
 @media(max-width:1441px){
@@ -1480,6 +1520,10 @@ textarea[type=text]::placeholder
 .field_contacts textarea{
   max-width: 100vw;
 }
+.map_contact {
+    width: 53%;
+}
+
 
 }
 @media(max-width:1439px){
@@ -1537,7 +1581,13 @@ textarea[type=text]::placeholder
   .name img {
      width: 80%;
   }
-  
+  .copyright{
+    flex-direction: column;
+    padding: 26px 90px;
+  }
+  .copyright p{
+    margin-bottom: 20px;
+  }
   
   #variable .slick-slide {
     margin: 0px 20px 0 20px;
@@ -1587,21 +1637,17 @@ textarea[type=text]::placeholder
     text-align: left;
   }
    .footer_container{
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    
   }
   .footer_logo{
-    margin: auto 26% 46px 26%;
+    margin: auto 0 46px 0;
   }
-  .site_map_footer, .contact_footer{
+  .site_map_footer{
     width: 40%;
-    margin: auto;
+    margin: auto 0;
   }
-  .contact_footer h4,
-  .contact_footer p,
-  .contact_footer a{
-    text-align: right;
-  }
+
   #variable .slider_header{
     font-size: 33px;
   }
@@ -1613,6 +1659,16 @@ textarea[type=text]::placeholder
     margin-left: 0;
     margin-right: 0;
   }
+  .copyright p{
+    text-align: left;
+  }
+  .map_contact {
+     width: 100%; 
+     max-width: 891px;
+}
+footer{
+  padding-bottom: 0;
+}
 }
 @media(max-width:1200px) {
   .nav{
@@ -1633,6 +1689,9 @@ textarea[type=text]::placeholder
 @media(max-width:1150px){
   .footer_container {
    padding: 46px 28px;
+    }
+    .copyright{
+      padding: 26px 38px;
     }
     .load_btn{
       letter-spacing: 0.2em;
@@ -1722,7 +1781,8 @@ textarea[type=text]::placeholder
     width: 50%
     
   }
-  .tel {
+  .tel,
+  .contact_phone {
     pointer-events:visible;
     cursor: pointer;
 }
@@ -1819,7 +1879,7 @@ textarea[type=text]::placeholder
   }
   .footer_container {
     justify-content: normal;
-    padding: 46px 40px;
+    padding: 46px 40px 5px 40px;
   }
   .contact_footer {
     margin: auto 0;
@@ -1829,9 +1889,7 @@ textarea[type=text]::placeholder
   .contact_footer a{
     text-align: left;
   }
-  .copyright{
-    display: none;
-  }
+ 
   .footer_logo {
     margin: auto 0 25px 0;
   }
@@ -1989,6 +2047,11 @@ textarea[type=text]::placeholder
 }
 .success_back u {
   text-underline-offset: 14px;
+}
+.site_map_footer a, 
+.contact_footer a, 
+.contact_footer p {
+  margin-top: 14px;
 }
 
 }
@@ -2284,6 +2347,9 @@ textarea[type=text]::placeholder
   font-size: 13px;
   line-height: 20px;
   
+}
+.footer_logo {
+  width: 200px;
 }
 }
 @media(max-width:560px){
@@ -2593,6 +2659,13 @@ textarea[type=text]::placeholder
 .contact_form{
   height: 810px;
 }
+.copyright p, .copyright p a,
+.copyright a span{
+  font-size: 13px;
+}
+.copyright p {
+  margin-bottom: 17px;
+}
 
 
 
@@ -2643,6 +2716,12 @@ textarea[type=text]::placeholder
 }
 .success_back {
   font-size: 15px;
+}
+.footer_container {
+ padding: 46px 30px 5px 30px;
+}
+.copyright {
+  padding: 26px 30px;
 }
 
 }
@@ -2737,6 +2816,12 @@ textarea[type=text]::placeholder
 .contact_form {
   padding: 30px 30px;
 }
+.footer_container {
+  padding: 46px 24px 5px 24px;
+ }
+ .copyright {
+   padding: 26px 24px;
+ }
 }
 @media(max-width:375px){
   .appearing_block_header {
@@ -2822,7 +2907,7 @@ textarea[type=text]::placeholder
   padding: 20px 20px;
 }
 .footer_container {
- padding: 30px 20px;
+  padding: 30px 18px 0 18px;
 }
 footer{
   padding-bottom: 0px;
@@ -2883,6 +2968,13 @@ footer{
 }
 .success {
   padding: 22px;
+}
+.copyright p, .copyright p a,
+.copyright a span {
+  font-size: 11px;
+}
+.copyright {
+  padding: 26px 18px;
 }
 }
 

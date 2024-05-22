@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['text'])) {$text = $_POST['text'];}
    
 
-    $to = "qwerty22625@gmail.com, energotr07@yandex.ru"; /*Укажите адрес, на который должно приходить письмо*/
+    $to = "contactus@vsamtechnologies.co.uk, energotr07@yandex.ru"; /*Укажите адрес, на который должно приходить письмо*/
     $sendfrom   = "$email"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
