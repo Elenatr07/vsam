@@ -353,34 +353,15 @@
           initialSlide: 0,
           arrows : false,
           variableWidth: true,
-          autoplay: false,
-          autoplaySpeed: 6000,
+          autoplay: true,
+          autoplaySpeed: 4000,
        
      
 
           
         });
-    });
-    $(document).on('ready', function() {
-       $("#consalting_center_slider2").slick({
-          dots: true,
-          infinite: true,
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: '13.9vw',
-          initialSlide: 0,
-          arrows : false,
-          variableWidth: true,
-          autoplay: true,
-          autoplaySpeed: 6000,
-         
 
-          
-        });
-    });
-    $(document).on('ready', function() {
-       $("#consalting_center_slider3").slick({
+            $("#consalting_center_slider2").slick({
           dots: true,
           infinite: true,
           centerMode: true,
@@ -391,13 +372,27 @@
           arrows : false,
           variableWidth: true,
           autoplay: true,
-          autoplaySpeed: 6000,
+          autoplaySpeed: 4000,
+    });
+
+   $("#consalting_center_slider3").slick({
+          dots: true,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '13.9vw',
+          initialSlide: 0,
+          arrows : false,
+          variableWidth: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
          
        
           
         });
-    })
-    
+
+      })    
   </script>
     <script src="scripts/service_menu.js"></script>
     <script src="scripts/show_more.js"></script>
