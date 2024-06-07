@@ -1571,7 +1571,7 @@ textarea[type=text]::placeholder
     padding: 37px 20px;
   }
   #variable .slick-slide.slick-current.slick-active.slick-center{
-    width: 600px !important;
+    width: 600px;
     margin: 0 20px 0 20px;
     height: 650px;
   }
@@ -1589,10 +1589,11 @@ textarea[type=text]::placeholder
     margin-bottom: 20px;
   }
   
-  #variable .slick-slide {
+  #variable .slick-slide,
+  #variable .slick-current {
     margin: 0px 20px 0 20px;
     height: 650px;
-    width: 600px !important;
+    width: 600px;
   }
   #variable .slick-slide .slider_txt{
       font-size: 25px;
@@ -1614,7 +1615,7 @@ textarea[type=text]::placeholder
   }
   #variable .slick-slide:nth-child(3) {
     background: rgba(157, 15, 15, 1);
-    margin: 0 10px 0 0;
+   
   }
   #variable .slick-slide:nth-child(4) {
     background: rgba(157, 15, 15, 1);
