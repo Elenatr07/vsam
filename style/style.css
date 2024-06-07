@@ -499,7 +499,7 @@ span {
   max-width: 1920px;
   width: 100%;
   margin: auto;
-  padding: 150px 90px;
+  padding:  150px 0px 150px 90px;
 }
 .footer_logo img{
   max-width: 608px;

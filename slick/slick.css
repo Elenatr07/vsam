@@ -129,6 +129,9 @@
   backface-visibility: hidden;
   transition-delay: 50ms;
 }
+.slick-slider .slick-track{
+    height: 100%;
+}
 .slick-track:before,
 .slick-track:after
 {
