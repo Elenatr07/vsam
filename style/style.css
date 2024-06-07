@@ -2168,7 +2168,7 @@ footer{
     padding: 100px 55px;
   }
   #variable .slider_header {
-    font-size: 24px;
+    font-size: 22px;
   }
   #variable .slick-slide.slick-current.slick-active.slick-center .slider_txt,
   #variable .slick-slide .slider_txt,
@@ -2249,7 +2249,7 @@ footer{
   padding: 30px 30px;
 }
 #variable .slider_header {
-  font-size: 22px;
+  font-size: 21px;
 }
 #variable .slick-slide.slick-current.slick-active.slick-center .slider_txt,
 #variable .slick-slide .slider_txt,
