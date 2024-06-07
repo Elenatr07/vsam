@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style/cookie.css">
   
    <link rel="stylesheet" type="text/css" href="slick/slick.css">
@@ -254,12 +255,14 @@
         $(document).on('ready', function(){
       $(".variable").slick({
         dots: true,
-        infinite:false,  
+        infinite: true,  
         variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         accessibility: true,
        centerMode: false,
+       autoplay: false,
+       loop: false,
         responsive: [
     {
       breakpoint: 1300,

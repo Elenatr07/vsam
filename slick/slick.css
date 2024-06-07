@@ -248,3 +248,11 @@
 #consalting_center_slider3 .slick-slide{
     width: 600px;
 }
+#variable .slick-slide.slick-cloned{
+    display: none;
+}
+@media(max-width:1300px){
+    #variable .slick-slide.slick-cloned{
+        display: block;
+    }
+}
