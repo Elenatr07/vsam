@@ -1478,7 +1478,8 @@ textarea[type=text]::placeholder
   #consalting_center_slider3 .slick-slide:nth-child(2)
 
  {
-    background: rgba(43, 61, 145, 1);
+   background: rgba(43, 61, 145, 1);
+  
 }
 #consalting_center_slider1 .slick-slide:nth-child(4),
 #consalting_center_slider1 .slick-slide:nth-child(3),
@@ -1572,7 +1573,7 @@ textarea[type=text]::placeholder
   }
   #variable .slick-slide.slick-current.slick-active.slick-center{
     width: 600px;
-    margin: 0 20px 0 20px;
+    margin: 15px 20px 0 20px;
     height: 650px;
   }
   .why_choose_us{
@@ -1591,7 +1592,7 @@ textarea[type=text]::placeholder
   
   #variable .slick-slide,
   #variable .slick-current {
-    margin: 0px 20px 0 20px;
+    margin: 15px 20px 0 20px;
     height: 650px;
     width: 600px;
   }
@@ -2079,7 +2080,7 @@ footer{
       margin: 70px 0 100px 50px;
     }
     #regular .slick-slide.slick-current.slick-active {
-      margin: 0 20px 0 100px;
+      margin: 20px 20px 0 100px;
   
   }
   .appearing_block_header {
@@ -2242,7 +2243,7 @@ footer{
   font-size: 36px;
 }
 #variable .slick-slide.slick-current.slick-active.slick-center {
-  margin: 0 15px 0 15px;
+  margin: 15px 15px 0 15px;
 }
 #variable .slick-current,
 #variable .slick-slide {
@@ -2478,7 +2479,7 @@ textarea[type=text]::placeholder
     width: 3% !important;
   }
   #regular .slick-slide.slick-current.slick-active {
-    margin: 0 10px 0 85px;
+    margin: 10px 10px 0 85px;
   }
   #regular .slick-slide {
     padding: 29px 30px;
@@ -2498,7 +2499,7 @@ textarea[type=text]::placeholder
     line-height: 21px
   }
   #regular .slick-slide {
-    margin: 0 10px;
+    margin: 10px 10px 0 10px;
   }
   #regular .slick-list {
     height: 650px;
@@ -2795,7 +2796,7 @@ textarea[type=text]::placeholder
 }
 #variable .slick-slide.slick-current.slick-active.slick-center,
 #variable .slick-slide {
-  margin: 0 10px 0 10px;
+  margin: 15px 10px 0 10px;
 }
 .step_block3_slider_info {
   font-size: 13px;
@@ -2847,7 +2848,7 @@ textarea[type=text]::placeholder
     padding: 40px 10px 0px 0px;
 }
 #regular .slick-slide.slick-current.slick-active {
-  margin: 0 10px 0 0px;
+  margin: 10px 10px 0 0px;
 }
 #regular .slick-slide {
   padding: 19px 20px;

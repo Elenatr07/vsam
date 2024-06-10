@@ -216,7 +216,7 @@
 }
 
 #regular .slick-slide.slick-current.slick-active{
-    margin: 0 40px 0 100px;
+    margin: 20px 40px 0 100px;
     background: rgba(248, 248, 255, 1);
     box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
    
