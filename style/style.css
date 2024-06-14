@@ -1829,22 +1829,7 @@ footer{
   .about_us_info {
     width: 98%;
   }
-  .appearing_block{
-    position: relative;
-    margin: auto;
-    left: 0;
 
-  }
-  .main_block img {
-    width: inherit;
-    
-}
-.main_content {
-  padding: 232px 90px 90px 90px;
-}
-.why_choose_us {
-  padding: 90px 90px 150px 90px;
-}
 
 }
 
@@ -1887,6 +1872,22 @@ footer{
 .step_block_3_info div:nth-child(2) {
   margin-right: 0px;
   margin-left: 0px;
+}
+.appearing_block{
+  position: relative;
+  margin: auto;
+  left: 0;
+
+}
+.main_block img {
+  width: inherit;
+  
+}
+.main_content {
+padding: 232px 90px 90px 90px;
+}
+.why_choose_us {
+padding: 90px 90px 150px 90px;
 }
 }
 
