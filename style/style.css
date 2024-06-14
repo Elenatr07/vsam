@@ -13,7 +13,7 @@
 html,
 body {
   width: 100vw;
-  height: 100vh;
+
   overflow-x: hidden;
 }
 
@@ -499,7 +499,7 @@ span {
   max-width: 1920px;
   width: 100%;
   margin: auto;
-  padding:  150px 0px 150px 90px;
+  padding:  150px 90px 150px 90px;
 }
 .footer_logo img{
   max-width: 608px;
@@ -1313,7 +1313,8 @@ textarea[type=text]::placeholder
   width: 100%;
   justify-content: space-between;
 }
-#variable .slick-current .slider_header {
+
+.block_item:nth-child(1) .slider_header {
   color: rgba(43, 61, 145, 1);
   font-family: "Kodchasan", sans-serif;
   font-size: 35px;
@@ -1322,7 +1323,7 @@ textarea[type=text]::placeholder
   letter-spacing: 0.1em;
   text-align: left;
 }
-#variable .slick-current .slider_txt {
+.block_item:nth-child(1) .slider_txt {
   font-family: "Kodchasan", sans-serif;
   font-size: 25px;
   font-weight: 400;
@@ -1331,13 +1332,13 @@ textarea[type=text]::placeholder
   text-align: left;
   color: rgba(0, 0, 0, 1);
 }
-#variable .slick-current .slider_line {
+.block_item:nth-child(1) .slider_line {
   width: 250px;
   margin-top: 36px;
   margin-bottom: 49px;
   border: 2px solid rgba(157, 15, 15, 1);
 }
-#variable .slider_header {
+.block_item .slider_header {
   font-family: "Kodchasan", sans-serif;
   font-size: 35px;
   font-weight: 400;
@@ -1346,21 +1347,57 @@ textarea[type=text]::placeholder
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
-#variable .slider_line {
+.block_item .slider_line {
   width: 250px;
   margin-top: 36px;
   margin-bottom: 49px;
   border: 2px solid rgba(255, 255, 255, 1);
 }
-#variable .slider_txt {
+
+.block_item .slider_txt {
   font-family: "Kodchasan", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 30.6px;
+  line-height: 42.5px;
   letter-spacing: 0.1em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
+.block_item:nth-child(1) {
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
+  padding: 40px 55px;
+  background: rgba(248, 248, 255, 1);
+  height: 700px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s, opacity 1s;
+}
+.block_item:nth-child(2) {
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
+  padding: 40px 55px;
+ background: rgba(43, 61, 145, 1);
+  height: 700px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1.5s, opacity 2s;
+}
+.block_item:nth-child(3) {
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.15);
+  padding: 40px 55px;
+  background: rgba(157, 15, 15, 1);
+  height: 700px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 2s, opacity 3s;
+}
+.block_item_anim{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #regular .slick-current .slider_line {
   width: 250px;
   margin-top: 36px;
@@ -1382,6 +1419,15 @@ textarea[type=text]::placeholder
   margin-top: 36px;
   margin-bottom: 49px;
   border: 2px solid rgba(255, 255, 255, 1);
+}
+.blocks_items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+
+}
+.block_item{
+  width: 31%;
 }
 
 
@@ -1440,6 +1486,14 @@ textarea[type=text]::placeholder
 .contact_info_item a {
   font-size: 24px;
 }
+
+}
+@media(max-width:1670px) {
+  .block_item:nth-child(3), .block_item:nth-child(1),
+.block_item:nth-child(2){
+  height: 777px;
+  padding: 30px 40px;
+}
 }
 @media(max-width:1500px){
   .consulting, .other_service{
@@ -1455,7 +1509,9 @@ textarea[type=text]::placeholder
   .step_block_2_txt,
   .appearing_block_button, 
   .about_us_link a,
-  .about_us_info p{
+  .about_us_info p,
+  .block_item.first .slider_txt,
+  .block_item .slider_txt{
     font-size: 24px;
   }
   .contant_header, 
@@ -1466,7 +1522,9 @@ textarea[type=text]::placeholder
   }
   .consalting_header, 
   .other_service_header, 
-  .step_block_1_header{
+  .step_block_1_header,
+  .block_item:nth-child(1) .slider_header,
+  .block_item .slider_header{
     font-size: 33px;
   }
   .text_in_service p, 
@@ -1515,22 +1573,30 @@ textarea[type=text]::placeholder
 .success_back {
   font-size: 36px;
 }
+.block_item:nth-child(3), .block_item:nth-child(1),
+.block_item:nth-child(2){
+  width: 85%;
+  margin: 30px auto;
+  height: 460px;
+}
+.blocks_items{
+  flex-direction: column;
+  justify-content: center;
+}
+.slider_block h3{
+  text-align: center;
+}
 
 
 }
 
 @media(max-width:1441px){
   .main_block img {
-      max-width: auto;
+      width: auto;
       height: auto;
 
   }
-  .appearing_block{
-    position: relative;
-    margin: auto;
-    left: 0;
 
-  }
   .slider_block h3{
     text-align: center;
   }
@@ -1595,6 +1661,7 @@ textarea[type=text]::placeholder
 }
 
 
+
 }
 @media(max-width:1439px){
   .about_us_block{
@@ -1650,9 +1717,7 @@ textarea[type=text]::placeholder
     margin: 15px 20px 0 20px;
     height: 650px;
   }
-  .why_choose_us{
-    padding: 120px 0;
-  }
+
   .name img {
      width: 80%;
   }
@@ -1742,6 +1807,7 @@ textarea[type=text]::placeholder
      width: 100%; 
      max-width: 891px;
 }
+
 footer{
   padding-bottom: 0;
 }
@@ -1763,6 +1829,22 @@ footer{
   .about_us_info {
     width: 98%;
   }
+  .appearing_block{
+    position: relative;
+    margin: auto;
+    left: 0;
+
+  }
+  .main_block img {
+    width: inherit;
+    
+}
+.main_content {
+  padding: 232px 90px 90px 90px;
+}
+.why_choose_us {
+  padding: 90px 90px 150px 90px;
+}
 
 }
 
@@ -2194,9 +2276,12 @@ footer{
       margin: 70px 0 100px 50px;
     }
     #regular .slick-slide.slick-current.slick-active {
-      margin: 20px 20px 0 100px;
+      margin: 0px 20px 0 100px;
   
   }
+  .block_item:nth-child(3), .block_item:nth-child(1), .block_item:nth-child(2) {
+     padding: 25px 25px;
+}
   .appearing_block_header {
     font-size: 44px;
     line-height: 60px;
@@ -2212,7 +2297,9 @@ footer{
   .step_block_3_info, 
   .appearing_block_button, 
   .about_us_link a,
-  .about_us_info p  {
+  .about_us_info p,
+  .block_item:nth-child(1) .slider_txt, 
+  .block_item .slider_txt  {
     font-size: 19px;
   }
   .main_content_slider {
@@ -2242,7 +2329,11 @@ footer{
   .contact_footer {
     width: 100%;
   }
-  .consalting_header, .other_service_header, .step_block_1_header {
+  .consalting_header, 
+  .other_service_header, 
+  .step_block_1_header,
+  .block_item:nth-child(1) .slider_header, 
+  .block_item .slider_header {
     font-size: 31px;
   }
   #bottom_menu2{
@@ -2348,7 +2439,15 @@ footer{
   font-size: 40px;
   line-height: 50px;
 }
-.appearing_block_txt, .step_block_1_txt, .step_block_2_txt, .step_block_3_info, .appearing_block_button, .about_us_link a, .about_us_info p {
+.appearing_block_txt, 
+.step_block_1_txt, 
+.step_block_2_txt, 
+.step_block_3_info, 
+.appearing_block_button, 
+.about_us_link a, 
+.about_us_info p,
+.block_item:nth-child(1) .slider_txt, 
+.block_item .slider_txt {
   font-size: 18px;
 }
 .appearing_block_button,
@@ -2380,8 +2479,14 @@ footer{
 }
 .consalting_header, 
 .other_service_header, 
-.step_block_1_header {
+.step_block_1_header, 
+.block_item:nth-child(1) .slider_header, 
+.block_item .slider_header{
+  
   font-size: 26px;
+}
+.blocks_items {
+  margin-top: 50px;
 }
 .appearing_block_header {
   font-size: 38px;
@@ -2492,7 +2597,10 @@ textarea[type=text]::placeholder
 .step_block_3_info, 
 .appearing_block_button, 
 .about_us_link a, 
-.about_us_info p{
+.about_us_info p,
+.block_item:nth-child(1) .slider_txt, 
+.block_item .slider_txt
+{
   font-size: 18px;
   line-height: 35px;
 }
@@ -2504,7 +2612,9 @@ textarea[type=text]::placeholder
 }
 .consalting_header, 
 .other_service_header, 
-.step_block_1_header {
+.step_block_1_header,
+.block_item:nth-child(1) .slider_header, 
+.block_item .slider_header  {
   font-size: 24px;
 }
 #regular .slick-current .slider_line,
@@ -2512,6 +2622,12 @@ textarea[type=text]::placeholder
   width: 200px;
   margin-top: 6px;
   
+  margin-bottom: 30px;
+}
+.block_item:nth-child(1) .slider_line,
+.block_item .slider_line {
+  width: 200px;
+  margin-top: 6px;
   margin-bottom: 30px;
 }
 #regular .slick-slide{
@@ -2580,10 +2696,18 @@ textarea[type=text]::placeholder
   .step_block_3_info, 
   .appearing_block_button, 
   .about_us_link a, 
-  .about_us_info p {
+  .about_us_info p,
+  .block_item:nth-child(1) .slider_txt, 
+  .block_item .slider_txt
+   {
     font-size: 17px;
     line-height: 28px;
   }
+  .block_item:nth-child(3), 
+  .block_item:nth-child(1), 
+  .block_item:nth-child(2) {
+        height: 370px;
+}
   .appearing_block_button {
     margin-top: 35px;
   }
@@ -2608,9 +2732,14 @@ textarea[type=text]::placeholder
   }
   .consalting_header, 
   .other_service_header, 
-  .step_block_1_header {
+  .step_block_1_header,
+  .block_item:nth-child(1) .slider_header, 
+  .block_item .slider_header{
     font-size: 20px;
   }
+  .blocks_items {
+    margin-top: 20px;
+}
   .text_in_service p, 
   .text_in_service ul, 
   .text_in_service li, 
@@ -2863,7 +2992,9 @@ textarea[type=text]::placeholder
   .step_block_3_info, 
   .appearing_block_button, 
   .about_us_link a, 
-  .about_us_info p {
+  .about_us_info p,
+  .block_item:nth-child(1) .slider_txt, 
+  .block_item .slider_txt {
     font-size: 15px;
     line-height: 26px;
 }
@@ -2882,7 +3013,9 @@ textarea[type=text]::placeholder
 }
 .consalting_header, 
 .other_service_header, 
-.step_block_1_header {
+.step_block_1_header,
+.block_item:nth-child(1) .slider_header, 
+.block_item .slider_header {
   font-size: 18px;
 }
 #regular .slick-current .slider_line, #regular .slider_line {
@@ -2966,7 +3099,11 @@ textarea[type=text]::placeholder
   .step_block_3_info, 
   .appearing_block_button, 
   .about_us_link a, 
-  .about_us_info p {
+  .about_us_info p,
+  .block_item:nth-child(2) .slider_txt, 
+  .block_item:nth-child(1) .slider_txt,
+  .block_item:nth-child(3) .slider_txt
+   {
         font-size: 14px;
         line-height: 25px;
     }
@@ -2987,7 +3124,9 @@ textarea[type=text]::placeholder
 }
 .consalting_header, 
 .other_service_header, 
-.step_block_1_header {
+.step_block_1_header,
+.block_item:nth-child(1) .slider_header, 
+.block_item .slider_header {
   font-size: 16px;
 }
 .text_in_service p, 
@@ -3111,6 +3250,11 @@ footer{
   height: 230px;
   padding: 30px 28px;
 }
+.block_item:nth-child(3), .block_item:nth-child(1), .block_item:nth-child(2) {
+  padding: 10px 15px;
+}
+.block_item:nth-child(1) .slider_line, .block_item .slider_line {
+  width: 180px;
 }
 
 

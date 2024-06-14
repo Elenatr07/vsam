@@ -8,7 +8,6 @@
   
    <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-  <link rel="stylesheet" href="style/slider.css"> 
   <link rel="stylesheet" href="style/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +15,7 @@
     <title>VSAM Technologies Ltd.</title>
 </head>
 <body>
+    
     <div id="nav_shadow"></div>
     <div id="cookie_note">
         <div>
@@ -24,40 +24,43 @@
         </div>
         
     </div>
+   
 
   
     <div class="container">
+        
+       
         <div class="first_page_container">
+           
             <div class="top">
                  <div class="menu_block">
                
-               <p><a id="up_page"></a></p>
-               <div class="header_block">
-                    <a class="name" href="#"><img src="img/logo.svg" alt=""></a>
-                    <!-- Hamburger icon -->
-                <input class="side-menu" type="checkbox" id="side-menu">
-                <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
-                    <nav class="nav">
-                        <div class="menu">
-                            <div class="menu_items">
-                                <a class="menu_item_name" href="#"><img src="img/logo.svg" alt=""></a>
-                                <a class="menu_item" href="consulting.html">Our Services</a>
-                                <a class="menu_item" href="success_stories.html">Success Stories</a> 
-                                <a class="menu_item" href="contact.html">Contact us</a>
-                            
+                    <p><a id="up_page"></a></p>
+                    <div class="header_block">
+                        <a class="name" href="#"><img src="img/logo.svg" alt=""></a>
+                         <!-- Hamburger icon -->
+                        <input class="side-menu" type="checkbox" id="side-menu">
+                        <label class="hamb" for="side-menu" id="menu_opener"><span class="hamb-line"></span></label>
+                         <nav class="nav">
+                            <div class="menu">
+                                <div class="menu_items">
+                                    <a class="menu_item_name" href="#"><img src="img/logo.svg" alt=""></a>
+                                    <a class="menu_item" href="consulting.html">Our Services</a>
+                                    <a class="menu_item" href="success_stories.html">Success Stories</a> 
+                                    <a class="menu_item" href="contact.html">Contact us</a>
+                                
+                                </div>
                             </div>
-                        </div>
                                 
 
                                     
-                    </nav>
-               </div>
-                        
+                        </nav>
+                    </div>
+                </div>
                 
-                
-              
+            
             </div>
-            </div>
+       
            
             <div class="main_block">
                 <img src="img/main_img.png" alt="">
@@ -69,11 +72,15 @@
                   <a class="appearing_block_button" href="contact.html">Request Consultation</a>
             
                 </div>
+              
             </div>
-        
+       
+          
              
 
         </div>
+        
+       
         <div class="main_content">
             <h2 class="contant_header">Our Services</h2>
             <div class="services_block">
@@ -123,6 +130,7 @@
             </div>
 
         </div>
+   
         <div class="main_content_slider">
             <h2 class="contant_header">Our Services</h2>
             <section class="regular slider" id="regular">
@@ -190,27 +198,28 @@
             <div class="slider_block">
                 <h3>Why Choose Us?</h3>
             </div>
-            <section class="variable slider" id="variable">
-                <div>
-                  <h3 class="slider_header">Cost Savings</h3>
-                            <hr class="slider_line">
-                            <p class="slider_txt">Through our IT consultancy and cloud services, clients achieve significant cost savings by optimizing infrastructures, reducing overheads, 
-                              and leveraging scalable solutions tailored to their unique needs.</p>
-                </div>
-                <div>
-                  <h3 class="slider_header">Client-Centric Approach</h3>
-                            <hr class="slider_line">
-                            <p class="slider_txt">We prioritize clients by tailoring solutions to specific needs, ensuring personalized support and dedicated service. 
-                              Trust us for a  collaborative experience that aligns with your goals, driving tangible results. </p>
-                </div>
-                <div>
-                  <h3 class="slider_header">Expertise & Experience</h3>
-                  <hr class="slider_line">
-                  <p class="slider_txt">With our seasoned IT expertise and rich experience, we guide clients through digital challenges, optimizing operations and fostering innovation. 
-                    Trust us to elevate your IT strategy and achieve unparalleled success.</p>
-                </div>
-          
-              </section>
+    
+      <div class="blocks_items" id="blocks_items">
+                <div class="block_item">
+                    <h3 class="slider_header">Cost Savings</h3>
+                              <hr class="slider_line">
+                              <p class="slider_txt">Through our IT consultancy and cloud services, clients achieve significant cost savings by optimizing infrastructures, reducing overheads, 
+                                and leveraging scalable solutions tailored to their unique needs.</p>
+                  </div>
+                  <div class="block_item">
+                    <h3 class="slider_header">Client-Centric Approach</h3>
+                              <hr class="slider_line">
+                              <p class="slider_txt">We prioritize clients by tailoring solutions to specific needs, ensuring personalized support and dedicated service. 
+                                Trust us for a  collaborative experience that aligns with your goals, driving tangible results. </p>
+                  </div>
+                  <div class="block_item">
+                    <h3 class="slider_header">Expertise & Experience</h3>
+                    <hr class="slider_line">
+                    <p class="slider_txt">With our seasoned IT expertise and rich experience, we guide clients through digital challenges, optimizing operations and fostering innovation. 
+                      Trust us to elevate your IT strategy and achieve unparalleled success.</p>
+                  </div>
+              </div>   
+           
   
         </div>
         <div class="up_page">
@@ -245,53 +254,11 @@
             
         </footer>
 
+
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" ></script>
   <script src="slick/slick.js" ></script>
-  <script>
-        $(document).on('ready', function(){
-            $("#variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        accessibility: true,
-       // adaptiveHeight: true
-       autoplaySpeed: 7000,
-       responsive: [
-        {
-        breakpoint: 1300,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,  
-            dots: true,
-            centerMode: true,
-            centerPadding: '13.9vw',
-            arrows : false,
-        // initialSlide: 3,
-            variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 9000,
-            speed:300,
-        
-      }
-    }]
-      
-        
-
-      });
-
   
-});
-
-   
- 
-
-
-  </script>
   <script>
      $(document).on('ready', function() {
       $("#regular").slick({
@@ -309,6 +276,7 @@
     });
 
   </script>
+  
   
     <script src="scripts/style_menu.js"></script>
     <script src="scripts/animation.js"></script>
